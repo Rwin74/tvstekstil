@@ -1,0 +1,111 @@
+{
+    "site_name": "TVS Textile",
+    "nav": {
+        "company": "Company",
+        "about": "About Us",
+        "certificates": "Certificates",
+        "production": "Production Facility",
+        "products": "Products",
+        "contact": "Contact",
+        "cart": "Cart"
+    },
+    "hero": {
+        "subtitle": "Premium Home Textile",
+        "cta": "Detail"
+    },
+    "home": {
+        "about_title": "TVS TEXTILE",
+        "about_text": "Our company produces high-quality home textile products, offering towels, bathrobes, bedding sets, homewear and many more products with world-class production capacity.",
+        "detail_btn": "Detail",
+        "categories_title": "Product Categories",
+        "who_we_are": "WHO WE ARE"
+    },
+    "products_page": {
+        "title": "OUR PRODUCTS",
+        "subtitle": "With 300 employees, having 10 million pcs production capacity and thanks to our own design center, today we are the leading exporter of towel, bathrobe, bed linen, adult & baby homewear units to more than 50 countries all around the World.",
+        "all": "All",
+        "add_to_cart": "Add to Cart",
+        "detail": "Detail",
+        "no_products": "No products found in this category."
+    },
+    "product_detail": {
+        "features": "Product Features",
+        "add_to_cart": "Add to Cart",
+        "whatsapp_order": "Order via WhatsApp",
+        "back": "Go Back",
+        "related": "Related Products"
+    },
+    "about": {
+        "banner_title": "ABOUT US",
+        "banner_text": "At TVS Textile, we provide services in the home textile sector with high quality standards.",
+        "mission_title": "OUR MISSION",
+        "mission_text": "To offer exclusive textile products for brands that want to create stylish lifestyles, using advanced technology with innovative approaches respectful to natural living, with competent employees.",
+        "vision_title": "OUR VISION",
+        "vision_text": "To create world-renowned brands that are symbols of prestige, adapting perfection to life.",
+        "values_title": "OUR VALUES",
+        "values_text": "We make our customers happy not with words but with actions. We respect nature and different cultures to ensure the sustainability of future generations, and act with social responsibility awareness."
+    },
+    "contact": {
+        "banner_title": "CONTACT",
+        "banner_text": "Get in touch with us",
+        "address_label": "Address",
+        "phone_label": "Phone",
+        "email_label": "Email",
+        "form_name": "Your Name",
+        "form_email": "Your Email",
+        "form_phone": "Your Phone",
+        "form_subject": "Subject",
+        "form_message": "Your Message",
+        "form_send": "Send",
+        "form_success": "Your message has been sent successfully!"
+    },
+    "cart_modal": {
+        "title": "My Cart",
+        "empty": "Your cart is empty",
+        "total": "Total",
+        "remove": "Remove",
+        "clear": "Clear Cart",
+        "whatsapp_order": "Order via WhatsApp",
+        "continue": "Continue Shopping"
+    },
+    "footer": {
+        "company": "Company",
+        "products": "Products",
+        "other": "Other",
+        "newsletter_title": "NEWSLETTER",
+        "newsletter_text": "Subscribe to our newsletter to receive the latest news.",
+        "newsletter_btn": "Send",
+        "newsletter_placeholder": "Your email address",
+        "copyright": "© 2026 TVS Textile. All Rights Reserved.",
+        "keep_in_touch": "Keep in Touch"
+    },
+    "categories": {
+        "banyo": "Bathroom",
+        "yatak-takimi": "Bedding",
+        "ev-kiyafeti": "Homewear",
+        "bebek-cocuk": "Baby & Kids",
+        "yasam": "Living",
+        "beach-spa": "Beach & Spa"
+    },
+    "category_desc": {
+        "banyo": "Woven fabrics produced on weaving looms with various yarn qualities, are prioritised ultra softness, high absorbency and quality, are become into elegant, comfortable and useful products thanks to of our designers's imaginations. Bathrobes, towels, hair caps, bathmats, washing glove and slippers can be produced from low to high weights.",
+        "yatak-takimi": "We produce bedding sets, bedspreads, sheets and pillowcases which are resistant to abrasion, antibacterial, absorb moisture and sweat well, create a feeling of coolness, have a shiny and soft texture, and will add elegance to bedrooms with embroidery and color alternatives.",
+        "ev-kiyafeti": "In the home wear group, comfort and quality are presented at the highest level with the collections prepared with both woven and knitted fabrics. Elegant models have been created with the combined use of knitted and woven fabrics.",
+        "bebek-cocuk": "Specially designed textile products for babies and children, made from organic cotton, suitable for sensitive skin. Bathrobe sets, swaddles, towels, pajamas and bibs are produced with the highest safety standards.",
+        "yasam": "Decorative home textile products that add style and elegance to your living spaces. Tablecloths, runners, napkins, cushion covers and curtains are carefully produced from natural fabrics.",
+        "beach-spa": "High quality towels, bathrobes and accessories designed for beach and spa use. From traditional Turkish hammam towels to modern beach collections, a wide range of products is offered."
+    },
+    "whatsapp": {
+        "greeting": "Hello, I would like to order the following products:",
+        "product_line": "{qty}x {name} - {price}",
+        "total_line": "Total: {total}",
+        "single_product": "Hello, I would like to get information about this product: {name}"
+    },
+    "features": {
+        "fast_shipping": "Fast Shipping",
+        "domestic": "Domestic Production",
+        "premium_fabric": "Premium Fabric",
+        "single_size": "One Size",
+        "variant_unit": "Variant(s)"
+    }
+}

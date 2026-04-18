@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found | TVS Textile</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/favicon.png" type="image/png" sizes="512x512">
+    <link rel="apple-touch-icon" href="img/favicon.png">
+    <link rel="shortcut icon" href="img/favicon.png"><text y='.9em' font-size='90'>🧵</text></svg>">
+    <style>
+        .error-page {
+            min-height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 4rem 1rem;
+        }
+
+        .error-code {
+            font-size: 8rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            line-height: 1;
+            margin-bottom: 1rem;
+        }
+
+        .error-message {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            color: var(--text-color);
+        }
+
+        .btn-home {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background-color 0.3s;
+            border: 1px solid #000;
+        }
+
+        .btn-home:hover {
+            background-color: var(--secondary-color);
+        }
+    </style>
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.tvstextile.com/404.html">
+    <meta property="og:title" content="Page Not Found | TVS Textile">
+    <meta property="og:description"
+        content="The page you are looking for could not be found. Return to the TVS Textile homepage.">
+    <meta property="og:image" content="https://www.tvstextile.com/img/tvslogo_yeni.webp">
+    <meta property="og:site_name" content="TVS Textile">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Page Not Found | TVS Textile">
+    <meta name="twitter:description"
+        content="The page you are looking for could not be found. Return to the TVS Textile homepage.">
+    <meta name="twitter:image" content="https://www.tvstextile.com/img/tvslogo_yeni.webp">
+    <link rel="canonical" href="https://www.tvstextile.com/404.html">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header" id="main-header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="img/tvslogo_yeni.webp" alt="TVS Tekstil" class="site-logo"
+                    style="height:54px;width:auto;display:block;">
+            </a>
+            <div class="header-contact-right">
+                <a href="tel:+905324770375">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path
+                            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
+                    </svg>
+                    +90 532 477 0375
+                </a>
+                <a href="mailto:info@tvstekstil.com">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="2" y="4" width="20" height="16" rx="2" />
+                        <polyline points="2 4 12 13 22 4" />
+                    </svg>
+                    info@tvstekstil.com
+                </a>
+            </div>
+        </div>
+        <div class="lang-switcher">
+            <button class="lang-btn active" data-lang="fr">FR</button>
+            <button class="lang-btn" data-lang="tr">TR</button>
+            <button class="lang-btn" data-lang="en">EN</button>
+            <button class="lang-btn" data-lang="de">DE</button>
+        </div>
+        </div>
+    </header>
+
+    <section class="error-page">
+        <div class="container animate-on-scroll">
+            <h1 class="error-code">404</h1>
+            <h2 class="error-message">Page Not Found</h2>
+            <p style="margin-bottom: 2rem; max-width: 500px;">
+                The page you are looking for could not be found. Return to the TVS Textile homepage.
+            </p>
+            <a href="products.html" class="btn-home" style="margin-top: 20px; color: black; text-transform: uppercase;"
+                data-i18n="footer.products">Products</a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-bottom">
+            <div class="container" style="display:flex; justify-content:center; align-items:center;">
+                <p>&copy; 2026 TVS Textile. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+    <script>
+        // Simple animation trigger if app.js doesn't catch it
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelector('.animate-on-scroll').classList.add('visible');
+        });
+    </script>
+</body>
+
+</html>

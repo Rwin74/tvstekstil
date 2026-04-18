@@ -1,0 +1,111 @@
+{
+    "site_name": "TVS Textile",
+    "nav": {
+        "company": "Entreprise",
+        "about": "À propos",
+        "certificates": "Certificats",
+        "production": "Site de Production",
+        "products": "Produits",
+        "contact": "Contact",
+        "cart": "Panier"
+    },
+    "hero": {
+        "subtitle": "Textile de Maison Premium",
+        "cta": "Détail"
+    },
+    "home": {
+        "about_title": "TVS TEXTILE",
+        "about_text": "Notre entreprise produit des produits textiles de maison de haute qualité, offrant des serviettes, des peignoirs, des ensembles de literie, des vêtements d'intérieur et bien d'autres produits avec une capacité de production de classe mondiale.",
+        "detail_btn": "Détail",
+        "categories_title": "Catégories de Produits",
+        "who_we_are": "QUI SOMMES-NOUS"
+    },
+    "products_page": {
+        "title": "NOS PRODUITS",
+        "subtitle": "Avec 300 employés et une capacité de production de 10 millions de pièces, grâce à notre propre centre de design, nous sommes aujourd'hui le premier exportateur de serviettes, peignoirs, linge de lit, vêtements d'intérieur pour adultes et bébés dans plus de 50 pays à travers le monde.",
+        "all": "Tous",
+        "add_to_cart": "Ajouter au panier",
+        "detail": "Détail",
+        "no_products": "Aucun produit trouvé dans cette catégorie."
+    },
+    "product_detail": {
+        "features": "Caractéristiques du produit",
+        "add_to_cart": "Ajouter au panier",
+        "whatsapp_order": "Commander via WhatsApp",
+        "back": "Retour",
+        "related": "Produits similaires"
+    },
+    "about": {
+        "banner_title": "À PROPOS",
+        "banner_text": "Chez TVS Textile, nous fournissons des services dans le secteur du textile de maison avec des standards de qualité élevés.",
+        "mission_title": "NOTRE MISSION",
+        "mission_text": "Offrir des produits textiles exclusifs pour les marques qui souhaitent créer des styles de vie élégants, en utilisant une technologie avancée avec des approches innovantes respectueuses de la vie naturelle.",
+        "vision_title": "NOTRE VISION",
+        "vision_text": "Créer des marques de renommée mondiale, symboles de prestige, en adaptant la perfection à la vie.",
+        "values_title": "NOS VALEURS",
+        "values_text": "Nous rendons nos clients heureux non pas avec des mots mais avec des actes. Nous respectons la nature et les différentes cultures pour assurer la durabilité des générations futures."
+    },
+    "contact": {
+        "banner_title": "CONTACT",
+        "banner_text": "Contactez-nous",
+        "address_label": "Adresse",
+        "phone_label": "Téléphone",
+        "email_label": "E-mail",
+        "form_name": "Votre nom",
+        "form_email": "Votre e-mail",
+        "form_phone": "Votre téléphone",
+        "form_subject": "Sujet",
+        "form_message": "Votre message",
+        "form_send": "Envoyer",
+        "form_success": "Votre message a été envoyé avec succès !"
+    },
+    "cart_modal": {
+        "title": "Mon panier",
+        "empty": "Votre panier est vide",
+        "total": "Total",
+        "remove": "Supprimer",
+        "clear": "Vider le panier",
+        "whatsapp_order": "Commander via WhatsApp",
+        "continue": "Continuer vos achats"
+    },
+    "footer": {
+        "company": "Entreprise",
+        "products": "Produits",
+        "other": "Autre",
+        "newsletter_title": "BULLETIN D'INFORMATION",
+        "newsletter_text": "Abonnez-vous à notre bulletin pour recevoir les dernières nouvelles.",
+        "newsletter_btn": "Envoyer",
+        "newsletter_placeholder": "Votre adresse e-mail",
+        "copyright": "© 2026 TVS Textile. Tous droits réservés.",
+        "keep_in_touch": "Keep in Touch"
+    },
+    "categories": {
+        "banyo": "Salle de bain",
+        "yatak-takimi": "Literie",
+        "ev-kiyafeti": "Vêtements d'intérieur",
+        "bebek-cocuk": "Bébé & Enfants",
+        "yasam": "Vie quotidienne",
+        "beach-spa": "Plage & Spa"
+    },
+    "category_desc": {
+        "banyo": "Les tissus tissés produits sur des métiers à tisser avec différentes qualités de fil sont transformés en produits élégants, confortables et utiles grâce à l'imagination de nos designers, avec un accent sur l'ultra douceur, la haute absorption et la qualité. Peignoirs, serviettes, bonnets, tapis de bain, gants et chaussons peuvent être produits de faible à haut grammage.",
+        "yatak-takimi": "Nous produisons des parures de lit, des couvre-lits, des draps et des taies d'oreiller résistants à l'abrasion, antibactériens, absorbant bien l'humidité et la transpiration, créant une sensation de fraîcheur, avec une texture brillante et douce, ajoutant de l'élégance aux chambres avec des alternatives de broderie et de couleur.",
+        "ev-kiyafeti": "Dans le groupe des vêtements d'intérieur, le confort et la qualité sont présentés au plus haut niveau avec des collections préparées avec des tissus tissés et tricotés. Des modèles élégants ont été créés avec l'utilisation combinée de tissus tricotés et tissés.",
+        "bebek-cocuk": "Des produits textiles spécialement conçus pour les bébés et les enfants, fabriqués en coton biologique, adaptés aux peaux sensibles. Les ensembles peignoirs, emmaillotages, serviettes, pyjamas et bavoirs sont produits selon les normes de sécurité les plus élevées.",
+        "yasam": "Des produits textiles décoratifs pour la maison qui ajoutent du style et de l'élégance à vos espaces de vie. Nappes, chemins de table, serviettes, housses de coussin et rideaux sont soigneusement produits à partir de tissus naturels.",
+        "beach-spa": "Des serviettes, peignoirs et accessoires de haute qualité conçus pour la plage et le spa. Des serviettes de hammam turques traditionnelles aux collections de plage modernes, une large gamme de produits est proposée."
+    },
+    "whatsapp": {
+        "greeting": "Bonjour, je souhaite commander les produits suivants :",
+        "product_line": "{qty}x {name} - {price}",
+        "total_line": "Total : {total}",
+        "single_product": "Bonjour, je souhaite obtenir des informations sur ce produit : {name}"
+    },
+    "features": {
+        "fast_shipping": "Livraison Rapide",
+        "domestic": "Production Nationale",
+        "premium_fabric": "Tissu Premium",
+        "single_size": "Taille Unique",
+        "variant_unit": "Variante(s)"
+    }
+}

@@ -1,0 +1,57 @@
+# === TVS Tekstil - .htaccess ===
+
+RewriteEngine On
+
+# 1. Force HTTPS
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# 2. Force WWW
+RewriteCond %{HTTP_HOST} !^www\. [NC]
+RewriteRule ^(.*)$ https://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# 3. Custom Error Pages
+ErrorDocument 404 /404.html
+
+# 4. GZIP Sıkıştırma (PageSpeed + SEO)
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html
+  AddOutputFilterByType DEFLATE text/css
+  AddOutputFilterByType DEFLATE text/javascript
+  AddOutputFilterByType DEFLATE application/javascript
+  AddOutputFilterByType DEFLATE application/json
+  AddOutputFilterByType DEFLATE application/xml
+  AddOutputFilterByType DEFLATE image/svg+xml
+  AddOutputFilterByType DEFLATE font/woff2
+</IfModule>
+
+# 5. Browser Caching (SEO Hız Optimizasyonu)
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType image/webp       "access plus 1 year"
+  ExpiresByType image/jpeg       "access plus 1 year"
+  ExpiresByType image/png        "access plus 1 year"
+  ExpiresByType image/gif        "access plus 1 year"
+  ExpiresByType image/svg+xml    "access plus 1 year"
+  ExpiresByType image/x-icon     "access plus 1 year"
+  ExpiresByType text/css         "access plus 1 month"
+  ExpiresByType application/javascript "access plus 1 month"
+  ExpiresByType font/woff2       "access plus 1 year"
+  ExpiresDefault                 "access plus 2 days"
+</IfModule>
+
+# 6. Güvenlik Başlıkları
+<IfModule mod_headers.c>
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set X-Frame-Options "SAMEORIGIN"
+  Header always set X-XSS-Protection "1; mode=block"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  # HSTS (SSL zorunlu - 1 yıl)
+  Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains" env=HTTPS
+</IfModule>
+
+# 7. WebP MIME Tipi
+<IfModule mod_mime.c>
+  AddType image/webp .webp
+  AddType font/woff2 .woff2
+</IfModule>

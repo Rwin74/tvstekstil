@@ -1,0 +1,111 @@
+{
+    "site_name": "TVS Textil",
+    "nav": {
+        "company": "Unternehmen",
+        "about": "Über uns",
+        "certificates": "Zertifikate",
+        "production": "Produktionsstätte",
+        "products": "Produkte",
+        "contact": "Kontakt",
+        "cart": "Warenkorb"
+    },
+    "hero": {
+        "subtitle": "Premium Heimtextilien",
+        "cta": "Detail"
+    },
+    "home": {
+        "about_title": "TVS TEXTIL",
+        "about_text": "Unser Unternehmen produziert hochwertige Heimtextilprodukte und bietet Handtücher, Bademäntel, Bettwäsche-Sets, Hausbekleidung und viele weitere Produkte mit Produktionskapazität auf Weltniveau.",
+        "detail_btn": "Detail",
+        "categories_title": "Produktkategorien",
+        "who_we_are": "WER WIR SIND"
+    },
+    "products_page": {
+        "title": "UNSERE PRODUKTE",
+        "subtitle": "Mit 300 Mitarbeitern und einer Produktionskapazität von 10 Millionen Stück sowie unserem eigenen Designzentrum sind wir heute der führende Exporteur von Handtüchern, Bademänteln, Bettwäsche, Heim- und Babybekleidung in mehr als 50 Länder weltweit.",
+        "all": "Alle",
+        "add_to_cart": "In den Warenkorb",
+        "detail": "Detail",
+        "no_products": "Keine Produkte in dieser Kategorie gefunden."
+    },
+    "product_detail": {
+        "features": "Produkteigenschaften",
+        "add_to_cart": "In den Warenkorb",
+        "whatsapp_order": "Bestellung über WhatsApp",
+        "back": "Zurück",
+        "related": "Ähnliche Produkte"
+    },
+    "about": {
+        "banner_title": "ÜBER UNS",
+        "banner_text": "Bei TVS Textil bieten wir Dienstleistungen im Heimtextilbereich mit hohen Qualitätsstandards.",
+        "mission_title": "UNSERE MISSION",
+        "mission_text": "Exklusive Textilprodukte für Marken anzubieten, die stilvolle Lebensstile schaffen möchten, mit fortschrittlicher Technologie und innovativen Ansätzen, die die natürliche Lebensweise respektieren.",
+        "vision_title": "UNSERE VISION",
+        "vision_text": "Weltbekannte Marken zu schaffen, die Symbole des Prestiges sind und Perfektion ins Leben umsetzen.",
+        "values_title": "UNSERE WERTE",
+        "values_text": "Wir machen unsere Kunden nicht mit Worten, sondern mit Taten glücklich. Wir respektieren die Natur und verschiedene Kulturen, um die Nachhaltigkeit zukünftiger Generationen zu gewährleisten."
+    },
+    "contact": {
+        "banner_title": "KONTAKT",
+        "banner_text": "Kontaktieren Sie uns",
+        "address_label": "Adresse",
+        "phone_label": "Telefon",
+        "email_label": "E-Mail",
+        "form_name": "Ihr Name",
+        "form_email": "Ihre E-Mail",
+        "form_phone": "Ihre Telefonnummer",
+        "form_subject": "Betreff",
+        "form_message": "Ihre Nachricht",
+        "form_send": "Senden",
+        "form_success": "Ihre Nachricht wurde erfolgreich gesendet!"
+    },
+    "cart_modal": {
+        "title": "Mein Warenkorb",
+        "empty": "Ihr Warenkorb ist leer",
+        "total": "Gesamt",
+        "remove": "Entfernen",
+        "clear": "Warenkorb leeren",
+        "whatsapp_order": "Bestellung über WhatsApp",
+        "continue": "Weiter einkaufen"
+    },
+    "footer": {
+        "company": "Unternehmen",
+        "products": "Produkte",
+        "other": "Sonstiges",
+        "newsletter_title": "NEWSLETTER",
+        "newsletter_text": "Abonnieren Sie unseren Newsletter, um die neuesten Nachrichten zu erhalten.",
+        "newsletter_btn": "Senden",
+        "newsletter_placeholder": "Ihre E-Mail-Adresse",
+        "copyright": "© 2026 TVS Textil. Alle Rechte vorbehalten.",
+        "keep_in_touch": "Keep in Touch"
+    },
+    "categories": {
+        "banyo": "Bad",
+        "yatak-takimi": "Bettwäsche",
+        "ev-kiyafeti": "Hausbekleidung",
+        "bebek-cocuk": "Baby & Kinder",
+        "yasam": "Wohnen",
+        "beach-spa": "Beach & Spa"
+    },
+    "category_desc": {
+        "banyo": "Auf Webstühlen mit verschiedenen Garnqualitäten hergestellte Stoffe werden mit dem Schwerpunkt auf ultra Weichheit, hoher Saugfähigkeit und Qualität dank der Vorstellungskraft unserer Designer zu eleganten, komfortablen und nützlichen Produkten. Bademäntel, Handtücher, Hauben, Badematten, Waschhandschuhe und Hausschuhe können von niedrigem bis hohem Gewicht produziert werden.",
+        "yatak-takimi": "Wir produzieren Bettwäsche-Sets, Tagesdecken, Laken und Kissenbüzüge, die abriebfest, antibakteriell, feuchtigkeits- und schweißabsorbierend sind, ein Kühlgefühl erzeugen, eine glänzende und weiche Textur haben und mit Stickerei- und Farbalternativen Eleganz in Schlafzimmer bringen.",
+        "ev-kiyafeti": "In der Hausbekleidungsgruppe werden Komfort und Qualität auf höchstem Niveau mit Kollektionen präsentiert, die sowohl mit gewebten als auch mit gestrickten Stoffen hergestellt werden. Elegante Modelle wurden durch die kombinierte Verwendung von Strick- und Webstoffen geschaffen.",
+        "bebek-cocuk": "Speziell für Babys und Kinder entworfene Textilprodukte aus Bio-Baumwolle, geeignet für empfindliche Haut. Bademantel-Sets, Wickeltücher, Handtücher, Schlafanzüge und Lätzchen werden nach höchsten Sicherheitsstandards hergestellt.",
+        "yasam": "Dekorative Heimtextilien, die Ihren Wohnräumen Stil und Eleganz verleihen. Tischdecken, Tischläufer, Servietten, Kissenhüllen und Vorhänge werden sorgfältig aus natürlichen Stoffen hergestellt.",
+        "beach-spa": "Hochwertige Handtücher, Bademäntel und Accessoires für den Strand- und Spa-Bereich. Von traditionellen türkischen Hamam-Handtüchern bis hin zu modernen Strandkollektionen wird eine breite Produktpalette angeboten."
+    },
+    "whatsapp": {
+        "greeting": "Hallo, ich möchte die folgenden Produkte bestellen:",
+        "product_line": "{qty}x {name} - {price}",
+        "total_line": "Gesamt: {total}",
+        "single_product": "Hallo, ich möchte Informationen über dieses Produkt erhalten: {name}"
+    },
+    "features": {
+        "fast_shipping": "Schnelle Lieferung",
+        "domestic": "Inlandsproduktion",
+        "premium_fabric": "Premium Stoff",
+        "single_size": "Einheitsgröße",
+        "variant_unit": "Variante(n)"
+    }
+}
