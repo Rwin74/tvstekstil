@@ -1,7 +1,10 @@
 User-agent: *
 Allow: /
+Disallow: /admin/
 Disallow: /admin-panel/
-Disallow: /node_modules/
+Disallow: /.private/
+Disallow: /tools/
+Disallow: /TVSTÜRKÇE/
 Disallow: /.git/
 
-Sitemap: https://www.tvstekstil.com/sitemap.xml
+Sitemap: https://www.tvstextile.com/sitemap.xml

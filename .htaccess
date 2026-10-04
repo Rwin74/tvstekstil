@@ -2,6 +2,19 @@
 
 RewriteEngine On
 
+# Files used locally must never be served by Apache.
+RewriteRule ^(?:\.private|\.git|tools|TVSTÜRKÇE)(?:/|$) - [F,L,NC]
+RewriteRule \.(?:zip|py|pyc|md)$ - [F,L,NC]
+
+# Preserve the old category addresses with permanent redirects.
+RewriteRule ^kategori/(?:banyo|beach-spa)\.html$ /collections/hotel-spa-textiles.html [R=301,L]
+RewriteRule ^kategori/bebek-cocuk\.html$ /collections/baby-textiles.html [R=301,L]
+RewriteRule ^kategori/(?:yatak-takimi|ev-kiyafeti|yasam)\.html$ /collections/home-textiles.html [R=301,L]
+
+# Canonical index URLs, only for direct requests (avoid directory-index loops).
+RewriteCond %{THE_REQUEST} \s/+((?:fr/|de/|es/)?)(?:index\.html)[\s?] [NC]
+RewriteRule ^((?:fr/|de/|es/)?)index\.html$ /$1 [R=301,L]
+
 # 1. Force HTTPS
 RewriteCond %{HTTPS} off
 RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]

@@ -3,12 +3,80 @@
     {
       "source": "/(.*)",
       "headers": [
-        { "key": "X-Content-Type-Options", "value": "nosniff" },
-        { "key": "X-Frame-Options", "value": "SAMEORIGIN" },
-        { "key": "X-XSS-Protection", "value": "1; mode=block" },
-        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" },
-        { "key": "Strict-Transport-Security", "value": "max-age=31536000; includeSubDomains" }
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "SAMEORIGIN"
+        },
+        {
+          "key": "X-XSS-Protection",
+          "value": "1; mode=block"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        },
+        {
+          "key": "Strict-Transport-Security",
+          "value": "max-age=31536000; includeSubDomains"
+        }
       ]
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "tvstextile.com"
+        }
+      ],
+      "destination": "https://www.tvstextile.com/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/kategori/banyo.html",
+      "destination": "/collections/hotel-spa-textiles.html",
+      "permanent": true
+    },
+    {
+      "source": "/kategori/beach-spa.html",
+      "destination": "/collections/hotel-spa-textiles.html",
+      "permanent": true
+    },
+    {
+      "source": "/kategori/bebek-cocuk.html",
+      "destination": "/collections/baby-textiles.html",
+      "permanent": true
+    },
+    {
+      "source": "/kategori/yatak-takimi.html",
+      "destination": "/collections/home-textiles.html",
+      "permanent": true
+    },
+    {
+      "source": "/kategori/ev-kiyafeti.html",
+      "destination": "/collections/home-textiles.html",
+      "permanent": true
+    },
+    {
+      "source": "/kategori/yasam.html",
+      "destination": "/collections/home-textiles.html",
+      "permanent": true
+    },
+    {
+      "source": "/index.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/:lang(fr|de|es)/index.html",
+      "destination": "/:lang/",
+      "permanent": true
     }
   ]
 }
