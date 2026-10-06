@@ -20,8 +20,10 @@ if(form){
   const selected=form.elements.product.selectedOptions[0]?.textContent || '';
   // Preserve the existing /admin/api/quotes contract and mail service.
   const payload={customerName:data.get('name'),companyName:data.get('subject'),email:data.get('email'),phone:data.get('phone'),notes:[data.get('message'),'','Destination: '+data.get('country'),'Product: '+selected,'Quantity: '+data.get('quantity')].join('\n'),items:'Iletisim Formu Mesaji'};
+  if(data.get('turnstileToken'))payload.turnstileToken=data.get('turnstileToken');
   const messages={en:['Sending…','Your enquiry has been sent successfully.','Your enquiry could not be sent. Please try again or email ozkan@tvstextile.com.'],fr:['Envoi…','Votre demande a été envoyée.','Votre demande n’a pas pu être envoyée. Réessayez ou écrivez à ozkan@tvstextile.com.'],de:['Wird gesendet…','Ihre Anfrage wurde gesendet.','Ihre Anfrage konnte nicht gesendet werden. Versuchen Sie es erneut oder schreiben Sie an ozkan@tvstextile.com.'],es:['Enviando…','Su consulta se ha enviado.','No se pudo enviar la consulta. Inténtelo de nuevo o escriba a ozkan@tvstextile.com.']};
   const text=messages[document.documentElement.lang]||messages.en;
+  const currentEmail=document.querySelector('.footer-email')?.getAttribute('href')?.replace(/^mailto:/,'');if(currentEmail)text[2]=text[2].replace('ozkan@tvstextile.com',currentEmail);
   const button=form.querySelector('button[type="submit"]');const status=document.querySelector('#form-status');const original=button.textContent;
   button.disabled=true;button.textContent=text[0];status.textContent='';
   try{
@@ -29,6 +31,6 @@ if(form){
    if(!response.ok)throw new Error('Enquiry failed');
    status.textContent=text[1];form.reset();
   }catch(error){status.textContent=text[2];}
-  finally{button.disabled=false;button.textContent=original;}
+  finally{const verification=form.elements.turnstileToken;button.disabled=!!verification&&!verification.value;button.textContent=original;}
  });
 }

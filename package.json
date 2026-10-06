@@ -1,0 +1,8 @@
+{
+  "name": "tvs-textile-admin",
+  "private": true,
+  "version": "1.0.0",
+  "engines": {"node": ">=22"},
+  "scripts": {"test": "node --test tools/admin-security.test.cjs", "admin:preview": "node tools/admin-preview.cjs"},
+  "dependencies": {"sharp": "0.35.5"}
+}

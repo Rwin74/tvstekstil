@@ -1,3 +1,8 @@
 __pycache__/
 .private/
 *.zip
+node_modules/
+.env
+.env.*
+!.env.example
+.vercel/

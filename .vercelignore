@@ -3,3 +3,7 @@ TVSTÜRKÇE
 tools
 *.zip
 *.md
+
+supabase
+.github
+.env*

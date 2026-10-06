@@ -1,0 +1,861 @@
+{
+  "schemaVersion": 1,
+  "settings": {
+    "address": "Akçeşme M. 2605 Sk. No: 40 Merkezefendi, Denizli, Türkiye",
+    "phone": "+90 532 477 0375",
+    "email": "ozkan@tvstextile.com",
+    "founded": "2021"
+  },
+  "pages": {
+    "en": {
+      "home": {
+        "title": "Turkish Home, Hotel & Baby Textiles | TVS Textile",
+        "description": "We manufacture home, hotel, spa and baby textiles in our own Denizli factory. Founded in 2021, TVS Textile welcomes international buyer enquiries.",
+        "heading": "Woven for everyday. \n Made for your world.",
+        "intro": "We manufacture home, hotel, spa and baby textiles in our own factory in Denizli, Türkiye. Founded in 2021, we are building relationships with international buyers around clear product briefs."
+      },
+      "about": {
+        "title": "Our company | TVS Textile, Denizli",
+        "description": "We founded TVS Textile in 2021 and manufacture in our own factory in Denizli, Türkiye. Discover our product range and target markets.",
+        "heading": "We are TVS Textile. \n We make our textiles in Denizli.",
+        "intro": "We founded TVS Textile in 2021. We manufacture in our own factory at Akçeşme M. 2605 Sk. No: 40 in Merkezefendi, Denizli. Our product range brings together home textiles, hotel and spa textiles, and baby collections."
+      },
+      "sourcing-guide": {
+        "title": "Textile Sourcing Guide for International Buyers | TVS Textile",
+        "description": "We explain how we discuss textile briefs: use, materials, sizes, samples and delivery responsibilities. Read our guide for international buyers.",
+        "heading": "Sourcing guide",
+        "intro": "We start with your intended use, then talk about materials, measurements and quantities. Share the details you already know and identify the decisions you still want to discuss."
+      },
+      "contact": {
+        "title": "Textile Enquiries & Export Projects | TVS Textile",
+        "description": "Tell us about your textile project. We welcome enquiries for bedding, hotel, spa and baby products from our own factory in Denizli.",
+        "heading": "Your next collection \n starts with a conversation.",
+        "intro": "We would like to hear what you are planning. Send us the product names, quantities and destination, together with the details that matter most to your project. We can then discuss the questions that need to be answered before a quotation."
+      }
+    },
+    "fr": {
+      "home": {
+        "title": "Linge de maison, hôtel & bébé de Turquie | TVS Textile",
+        "description": "Nous fabriquons du linge de maison et des textiles hôtel, spa et bébé dans notre usine à Denizli. TVS Textile a été créée en 2021.",
+        "heading": "Tissés pour le quotidien. \n Pensés pour votre univers.",
+        "intro": "Nous fabriquons du linge de maison et des textiles pour hôtel, spa et bébé dans notre propre usine à Denizli, en Türkiye. Depuis notre création en 2021, nous construisons nos échanges avec les acheteurs internationaux autour de projets clairement définis."
+      },
+      "about": {
+        "title": "Notre entreprise | TVS Textile, Denizli",
+        "description": "Nous avons créé TVS Textile en 2021 et fabriquons dans notre propre usine à Denizli. Découvrez notre gamme et nos marchés cibles.",
+        "heading": "Nous sommes TVS Textile. \n Nous fabriquons à Denizli.",
+        "intro": "Nous avons créé TVS Textile en 2021. Nous fabriquons dans notre propre usine, à Akçeşme M. 2605 Sk. No: 40, Merkezefendi, Denizli. Notre gamme réunit linge de maison, textiles pour hôtel et spa, et collections bébé."
+      },
+      "sourcing-guide": {
+        "title": "Guide d’achat de textiles en Turquie | TVS Textile",
+        "description": "Nous expliquons notre approche des projets textiles : usage, matières, dimensions, échantillons et livraison. Lisez notre guide d’achat.",
+        "heading": "Guide d’achat",
+        "intro": "Nous partons de l’usage prévu, puis discutons matières, mesures et quantités. Partagez ce que vous savez déjà et les choix que vous souhaitez encore examiner avec nous."
+      },
+      "contact": {
+        "title": "Contact et projets textiles internationaux | TVS Textile",
+        "description": "Présentez-nous votre projet textile. Depuis notre usine à Denizli, nous échangeons sur vos besoins de linge de lit, hôtel, spa et bébé.",
+        "heading": "Votre prochaine collection \n commence par un échange.",
+        "intro": "Nous souhaitons connaître votre projet. Envoyez-nous les produits, quantités et destination, ainsi que les détails les plus importants pour vous. Nous pourrons ensuite discuter des points à préciser avant un devis."
+      }
+    },
+    "de": {
+      "home": {
+        "title": "Heim-, Hotel- & Babytextilien aus der Türkei | TVS Textile",
+        "description": "Wir fertigen Heim-, Hotel-, Spa- und Babytextilien in unserer eigenen Fabrik in Denizli. TVS Textile wurde 2021 gegründet.",
+        "heading": "Für den Alltag gewebt. \n Für Ihre Welt gemacht.",
+        "intro": "Wir fertigen Heim-, Hotel-, Spa- und Babytextilien in unserer eigenen Fabrik in Denizli, Türkiye. Seit unserer Gründung 2021 möchten wir Beziehungen zu internationalen Einkäufern auf klar beschriebenen Produktprojekten aufbauen."
+      },
+      "about": {
+        "title": "Unternehmen | TVS Textile, Denizli",
+        "description": "Wir haben TVS Textile 2021 gegründet und fertigen in unserer eigenen Fabrik in Denizli. Lernen Sie unser Sortiment und unsere Zielmärkte kennen.",
+        "heading": "Wir sind TVS Textile. \n Wir produzieren in Denizli.",
+        "intro": "Wir haben TVS Textile 2021 gegründet. Wir produzieren in unserer eigenen Fabrik in Akçeşme M. 2605 Sk. No: 40, Merkezefendi, Denizli. Unser Sortiment umfasst Heimtextilien, Hotel- und Spa-Textilien sowie Babykollektionen."
+      },
+      "sourcing-guide": {
+        "title": "Textileinkauf in der Türkei: Einkaufsleitfaden | TVS Textile",
+        "description": "Wir erklären unseren Ansatz für Textilprojekte: Verwendung, Material, Maße, Muster und Lieferung. Lesen Sie unseren Einkaufsleitfaden.",
+        "heading": "Einkaufsleitfaden",
+        "intro": "Wir beginnen mit der Verwendung und sprechen dann über Materialien, Maße und Mengen. Teilen Sie uns mit, was bereits feststeht und welche Entscheidungen Sie noch mit uns besprechen möchten."
+      },
+      "contact": {
+        "title": "Kontakt und internationale Textilprojekte | TVS Textile",
+        "description": "Erzählen Sie uns von Ihrem Textilprojekt. Wir freuen uns über Anfragen zu Bettwäsche, Hotel-, Spa- und Babytextilien aus unserer Fabrik in Denizli.",
+        "heading": "Ihre nächste Kollektion \n beginnt mit einem Gespräch.",
+        "intro": "Wir möchten erfahren, was Sie planen. Teilen Sie uns Produkte, Mengen und Zielland sowie die für Sie wichtigen Details mit. Anschließend können wir die Fragen besprechen, die vor einem Angebot zu klären sind."
+      }
+    },
+    "es": {
+      "home": {
+        "title": "Textiles de hogar, hotel y bebé de Turquía | TVS Textile",
+        "description": "Fabricamos textiles de hogar, hotel, spa y bebé en nuestra propia fábrica de Denizli. Fundamos TVS Textile en 2021.",
+        "heading": "Tejidos para cada día. \n Pensados para su mundo.",
+        "intro": "Fabricamos textiles de hogar, hotel, spa y bebé en nuestra propia fábrica de Denizli, Türkiye. Desde nuestra creación en 2021, buscamos relaciones con compradores internacionales a partir de proyectos bien definidos."
+      },
+      "about": {
+        "title": "Empresa | TVS Textile, Denizli",
+        "description": "Fundamos TVS Textile en 2021 y fabricamos en nuestra propia planta de Denizli. Conozca nuestra gama y nuestros mercados objetivo.",
+        "heading": "Somos TVS Textile. \n Fabricamos en Denizli.",
+        "intro": "Fundamos TVS Textile en 2021. Fabricamos en nuestra propia planta de Akçeşme M. 2605 Sk. No: 40, Merkezefendi, Denizli. Nuestra gama reúne textiles para hogar, hotel y spa, además de colecciones de bebé."
+      },
+      "sourcing-guide": {
+        "title": "Guía de compra de textiles en Turquía | TVS Textile",
+        "description": "Explicamos cómo comentamos los proyectos textiles: uso, materiales, medidas, muestras y entrega. Lea nuestra guía para compradores.",
+        "heading": "Guía de compra",
+        "intro": "Empezamos por el uso previsto y después comentamos materiales, medidas y cantidades. Comparta lo que ya sabe y las decisiones que todavía quiere hablar con nosotros."
+      },
+      "contact": {
+        "title": "Contacto y proyectos textiles internacionales | TVS Textile",
+        "description": "Cuéntenos su proyecto textil. Desde nuestra propia fábrica de Denizli conversamos sobre ropa de cama y textiles de hotel, spa y bebé.",
+        "heading": "Su próxima colección \n empieza con una conversación.",
+        "intro": "Queremos conocer lo que está preparando. Envíenos productos, cantidades y destino, junto con los detalles que más importan para su proyecto. Después podremos comentar qué falta aclarar antes de un presupuesto."
+      }
+    }
+  },
+  "products": [
+    {
+      "slug": "muslin-duvet-covers",
+      "group": 0,
+      "active": true,
+      "image": "/img/products/muslin-duvet-covers.webp",
+      "realPhoto": false,
+      "updated": "2026-10-06",
+      "locales": {
+        "en": {
+          "name": "Muslin duvet covers",
+          "lead": "We see muslin bedding as a choice of texture, not just a name on a fabric list.",
+          "heading": "The feel we want to define together",
+          "paragraph1": "When you describe a muslin duvet cover to us, we want to understand how it should feel on the bed. A light, airy appearance and a more substantial layered fabric lead to different briefs. We therefore start the conversation with composition, the number of gauze layers and your preferred finished dimensions.",
+          "paragraph2": "We also want to discuss what happens after washing. The agreed dimensions should make sense alongside the expected shrinkage and care instructions. If this cover belongs to a larger bedding range, send us the pillowcase sizes and colour references too; we can then discuss the collection as a whole.",
+          "metaTitle": "Muslin duvet covers Manufacturer in Turkey | TVS Textile",
+          "metaDescription": "Muslin duvet covers from our own Denizli factory. Discuss product specifications, quantities and your wholesale sourcing brief with TVS Textile.",
+          "question": "How do we specify a muslin duvet cover collection?",
+          "answer": "We ask you to send a texture reference as well as the dimensions. Tell us which gauze construction and composition you want to discuss, whether pillowcases are included and how the finished set should be packaged. We agree the fabric and care expectations for the actual product before treating the brief as complete.",
+          "specs": "Fabric|Composition and number of gauze layers\nFinished size|Duvet and pillowcase measurements\nCare brief|Washing conditions and expected finished dimensions after care",
+          "imageAlt": "Muslin duvet covers"
+        },
+        "fr": {
+          "name": "Gaze de coton housse de couette",
+          "lead": "Pour nous, une housse de couette en gaze de coton se choisit d’abord pour sa texture.",
+          "heading": "Nous commençons par le toucher recherché",
+          "paragraph1": "Lorsque vous nous présentez une collection en gaze de coton, nous cherchons à comprendre le rendu souhaité sur le lit. Une étoffe légère et un tissu composé de plusieurs couches ne donnent pas le même point de départ. Nous vous proposons donc de préciser la composition, le nombre de couches et les dimensions finies.",
+          "paragraph2": "Nous souhaitons aussi parler du lavage avant de figer le cahier des charges. Le retrait attendu et les instructions d’entretien doivent être cohérents avec les mesures convenues. Pour un ensemble coordonné, transmettez-nous également les dimensions des taies et vos références de couleur : nous pourrons aborder toute la gamme dans le même échange.",
+          "metaTitle": "Fabricant de gaze de coton housse de couette en Turquie | TVS Textile",
+          "metaDescription": "Gaze de coton housse de couette : fabrication dans notre propre usine à Denizli. Échangeons sur les caractéristiques, quantités et besoins de votre achat professionnel.",
+          "question": "Comment définir une housse de couette en gaze de coton ?",
+          "answer": "Nous souhaitons recevoir une référence de texture avec les mesures. Indiquez la construction de gaze à étudier, les taies incluses et la présentation du lot. Nous voulons convenir de la matière et de l’entretien du produit réel avant de considérer le cahier des charges comme complet.",
+          "specs": "Matière|Composition et nombre de couches de gaze\nDimensions|Mesures de la couette et des taies\nEntretien|Lavage prévu et dimensions attendues après entretien",
+          "imageAlt": "Gaze de coton housse de couette"
+        },
+        "de": {
+          "name": "Musselin Bettwäsche",
+          "lead": "Für uns beginnt Musselin-Bettwäsche mit der gewünschten Haptik, nicht mit einem Stoffnamen.",
+          "heading": "Wir möchten den Charakter des Gewebes verstehen",
+          "paragraph1": "Wenn Sie uns eine Musselin-Kollektion beschreiben, interessiert uns zunächst das gewünschte Gefühl auf dem Bett. Ein leicht wirkendes Gewebe und ein mehrlagiger Aufbau führen zu unterschiedlichen Anforderungen. Deshalb möchten wir Zusammensetzung, Lagenzahl und Fertigmaße gemeinsam festhalten.",
+          "paragraph2": "Auch das Waschen gehört für uns in diese Diskussion. Die vereinbarten Maße sollten zum erwarteten Einlaufverhalten und zur Pflegeanleitung passen. Für eine abgestimmte Kollektion nennen Sie uns bitte auch Kissenmaße und Farbreferenzen. So können wir über die gesamte Bettwäsche sprechen statt nur über einen einzelnen Bezug.",
+          "metaTitle": "Musselin Bettwäsche Hersteller Türkei | TVS Textile",
+          "metaDescription": "Musselin Bettwäsche aus unserer eigenen Fabrik in Denizli. Besprechen Sie Spezifikationen, Mengen und Ihren Textileinkauf mit TVS Textile.",
+          "question": "Wie beschreiben Sie die gewünschte Musselin-Bettwäsche?",
+          "answer": "Senden Sie uns neben den Maßen eine Vorlage für die gewünschte Textur. Nennen Sie Lagenaufbau, Zusammensetzung, enthaltene Kissenbezüge und Verpackungswünsche. Wir möchten Material und Pflegeanforderungen für das tatsächliche Produkt klären, bevor die Spezifikation als vollständig gilt.",
+          "specs": "Stoff|Zusammensetzung und Anzahl der Musselinlagen\nMaße|Bettdecken- und Kissenbezugmaße\nPflege|Waschbedingungen und erwartete Maße nach der Pflege",
+          "imageAlt": "Musselin Bettwäsche"
+        },
+        "es": {
+          "name": "Fundas nórdicas de muselina",
+          "lead": "Para nosotros, una funda nórdica de muselina empieza por la textura que quiere conseguir.",
+          "heading": "Queremos entender el tacto de su colección",
+          "paragraph1": "Cuando nos presenta una colección de muselina, queremos saber cómo imagina el tejido sobre la cama. Un aspecto ligero y una construcción de varias capas plantean fichas distintas. Por eso proponemos concretar composición, número de capas y medidas finales antes de hablar solo de colores.",
+          "paragraph2": "También queremos considerar el lavado. Las medidas acordadas deben tener sentido junto con el encogimiento previsto y los cuidados. Si la funda forma parte de un conjunto, compártanos las medidas de las almohadas y las referencias de color. Así podremos conversar sobre toda la colección.",
+          "metaTitle": "Fabricante de fundas nórdicas de muselina en Turquía | TVS Textile",
+          "metaDescription": "Fundas nórdicas de muselina de nuestra propia fábrica en Denizli. Consulte especificaciones, cantidades y los requisitos de su compra profesional con TVS Textile.",
+          "question": "¿Cómo definir una funda nórdica de muselina?",
+          "answer": "Queremos una referencia de textura además de las medidas. Indique las capas y composición que desea estudiar, las fundas de almohada incluidas y la presentación. Acordaremos tejido y cuidados para el producto real antes de dar la especificación por completa.",
+          "specs": "Tejido|Composición y número de capas de muselina\nMedidas|Dimensiones del edredón y las fundas de almohada\nCuidados|Lavado y medidas esperadas tras el cuidado",
+          "imageAlt": "Fundas nórdicas de muselina"
+        }
+      }
+    },
+    {
+      "slug": "fitted-sheets",
+      "group": 0,
+      "active": true,
+      "image": "/img/products/fitted-sheets.webp",
+      "realPhoto": false,
+      "updated": "2026-10-06",
+      "locales": {
+        "en": {
+          "name": "Fitted sheets",
+          "lead": "For us, a fitted sheet begins with the mattress it needs to fit.",
+          "heading": "We look beyond width and length",
+          "paragraph1": "A mattress measurement without its depth leaves an important part of a fitted-sheet brief unanswered. We ask you to describe all three dimensions, whether a topper is used and how you want the elastic to sit. That gives our discussion a practical starting point rather than relying on labels such as double or king.",
+          "paragraph2": "Your intended market also matters to the size brief. We want to agree the actual measurements and composition, then discuss laundering and the expected fit after washing. For a coordinated range, tell us which duvet covers the sheet will accompany and whether each colour needs its own quantity breakdown.",
+          "metaTitle": "Fitted sheets Manufacturer in Turkey | TVS Textile",
+          "metaDescription": "Fitted sheets from our own Denizli factory. Discuss product specifications, quantities and your wholesale sourcing brief with TVS Textile.",
+          "question": "Can we use bed-size names alone for a fitted-sheet enquiry?",
+          "answer": "We prefer actual mattress measurements. A label such as queen or king does not tell us the depth of your mattress or whether you use a topper. Send those details alongside the required sheet composition and the fit you want to discuss, so our quotation refers to your particular bedding range.",
+          "specs": "Mattress|Width, length, depth and any topper\nFit|Elastic arrangement and corner construction\nRange|Quantities for each mattress size and colour",
+          "imageAlt": "Fitted sheets"
+        },
+        "fr": {
+          "name": "Drap housse",
+          "lead": "Nous partons du matelas pour parler d’un drap-housse, pas seulement du nom de sa taille.",
+          "heading": "La hauteur du matelas fait partie du projet",
+          "paragraph1": "La largeur et la longueur ne suffisent pas à décrire l’ajustement recherché. Nous vous demandons également la hauteur du matelas, la présence éventuelle d’un surmatelas et vos préférences pour les élastiques. Ces informations rendent la discussion plus précise qu’une simple mention de lit double.",
+          "paragraph2": "Nous souhaitons convenir des mesures réelles et de la composition, puis aborder le comportement attendu après lavage. Si le drap-housse accompagne une housse de couette, précisez les couleurs à coordonner. Les quantités par taille et par couleur nous donnent une lecture plus claire de votre collection.",
+          "metaTitle": "Fabricant de drap housse en Turquie | TVS Textile",
+          "metaDescription": "Drap housse : fabrication dans notre propre usine à Denizli. Échangeons sur les caractéristiques, quantités et besoins de votre achat professionnel.",
+          "question": "Une appellation de lit suffit-elle pour un drap-housse ?",
+          "answer": "Nous préférons les mesures du matelas. Une désignation comme queen ou king ne précise ni sa hauteur ni la présence d’un surmatelas. Ajoutez la composition souhaitée et décrivez l’ajustement recherché : notre échange portera ainsi sur votre gamme réelle.",
+          "specs": "Matelas|Largeur, longueur, hauteur et surmatelas éventuel\nAjustement|Disposition des élastiques et construction des angles\nGamme|Quantités par dimension et couleur",
+          "imageAlt": "Drap housse"
+        },
+        "de": {
+          "name": "Spannbettlaken",
+          "lead": "Wir beginnen bei einem Spannbettlaken mit der Matratze, auf die es passen soll.",
+          "heading": "Wir fragen auch nach der Matratzenhöhe",
+          "paragraph1": "Breite und Länge beschreiben die gewünschte Passform noch nicht vollständig. Wir möchten auch die Höhe, einen möglichen Topper und die Anordnung des Gummizugs verstehen. Konkrete Maße helfen uns mehr als eine Größenbezeichnung wie Doppelbett.",
+          "paragraph2": "Wir möchten Material und Fertigmaße festlegen und anschließend das Verhalten nach dem Waschen besprechen. Wenn das Laken mit Bettbezügen kombiniert werden soll, nennen Sie uns die dazugehörigen Farben. Eine Aufteilung der Mengen nach Größe und Farbe macht Ihre geplante Kollektion für die Anfrage nachvollziehbar.",
+          "metaTitle": "Spannbettlaken Hersteller Türkei | TVS Textile",
+          "metaDescription": "Spannbettlaken aus unserer eigenen Fabrik in Denizli. Besprechen Sie Spezifikationen, Mengen und Ihren Textileinkauf mit TVS Textile.",
+          "question": "Reicht eine Bettgrößenbezeichnung für Spannbettlaken?",
+          "answer": "Wir bevorzugen die tatsächlichen Matratzenmaße. Begriffe wie Queen oder King beschreiben weder Matratzenhöhe noch einen Topper. Ergänzen Sie die gewünschte Zusammensetzung und Passform. So bezieht sich unsere Besprechung auf Ihr konkretes Sortiment.",
+          "specs": "Matratze|Breite, Länge, Höhe und möglicher Topper\nPassform|Gummizug und Eckenkonstruktion\nSortiment|Mengen je Matratzenmaß und Farbe",
+          "imageAlt": "Spannbettlaken"
+        },
+        "es": {
+          "name": "Sábanas bajeras",
+          "lead": "Empezamos una sábana bajera por el colchón al que debe ajustarse.",
+          "heading": "También nos interesa la altura del colchón",
+          "paragraph1": "El ancho y el largo no describen por completo el ajuste. Queremos conocer la altura, si habrá un sobrecolchón y cómo desea colocar el elástico. Esas medidas nos ayudan más que una etiqueta general como cama doble.",
+          "paragraph2": "Proponemos acordar composición y dimensiones y después comentar el comportamiento tras el lavado. Si la sábana acompaña a una funda nórdica, indíquenos los colores que quiere coordinar. Las cantidades por tamaño y color permiten entender mejor el conjunto que está preparando.",
+          "metaTitle": "Fabricante de sábanas bajeras en Turquía | TVS Textile",
+          "metaDescription": "Sábanas bajeras de nuestra propia fábrica en Denizli. Consulte especificaciones, cantidades y los requisitos de su compra profesional con TVS Textile.",
+          "question": "¿Basta con el nombre del tamaño de cama para una sábana bajera?",
+          "answer": "Preferimos las medidas reales del colchón. Queen o king no indican su altura ni la presencia de un sobrecolchón. Añada composición y ajuste deseados para que nuestra conversación se refiera a su gama concreta de ropa de cama.",
+          "specs": "Colchón|Ancho, largo, altura y sobrecolchón\nAjuste|Elásticos y construcción de esquinas\nGama|Cantidades por medida y color",
+          "imageAlt": "Sábanas bajeras"
+        }
+      }
+    },
+    {
+      "slug": "duvet-covers",
+      "group": 0,
+      "active": true,
+      "image": "/img/products/duvet-covers.webp",
+      "realPhoto": false,
+      "updated": "2026-10-06",
+      "locales": {
+        "en": {
+          "name": "Duvet covers",
+          "lead": "We think of a duvet cover as the centre of a coordinated bedding collection.",
+          "heading": "The closure is part of the design",
+          "paragraph1": "Colour and fabric set the direction, but we do not want the small details to be lost in the enquiry. The duvet dimensions, opening position and preferred fastening belong in the same brief. We ask you to share whether the cover is intended for a home collection or hospitality use, because the practical priorities can differ.",
+          "paragraph2": "We prefer to discuss the pillowcases at the same time. Their dimensions, edging and quantities help us understand what a complete set should contain. A design reference is useful, but the written specification should still describe the agreed composition, colour and finishing so the quotation has a clear basis.",
+          "metaTitle": "Duvet covers Manufacturer in Turkey | TVS Textile",
+          "metaDescription": "Duvet covers from our own Denizli factory. Discuss product specifications, quantities and your wholesale sourcing brief with TVS Textile.",
+          "question": "What should we include in a duvet-cover set brief?",
+          "answer": "We want to know exactly what belongs in the set. Describe the cover, the number of pillowcases, their dimensions and the closure you prefer. If you are comparing a smooth woven cover with our muslin range, make that distinction in your enquiry so we discuss the right textile construction.",
+          "specs": "Cover|Duvet width and length\nClosure|Opening position and preferred fastening\nSet|Pillowcase dimensions and units per set",
+          "imageAlt": "Duvet covers"
+        },
+        "fr": {
+          "name": "Housse de couette",
+          "lead": "Nous considérons la housse de couette comme une pièce centrale de votre linge de lit.",
+          "heading": "Nous donnons une place aux détails de fermeture",
+          "paragraph1": "Le tissu et la couleur orientent la collection, mais nous souhaitons aussi préciser les dimensions, la position de l’ouverture et le type de fermeture. Présentez-nous l’usage prévu : une gamme pour la maison et un projet hôtelier peuvent avoir des priorités pratiques différentes.",
+          "paragraph2": "Nous préférons aborder les taies dans le même échange. Leurs mesures, leurs finitions et leur nombre permettent de définir ce que votre ensemble doit contenir. Une image de référence est utile ; nous voulons néanmoins un descriptif écrit des matières, couleurs et finitions pour que la demande de devis repose sur des éléments explicites.",
+          "metaTitle": "Fabricant de housse de couette en Turquie | TVS Textile",
+          "metaDescription": "Housse de couette : fabrication dans notre propre usine à Denizli. Échangeons sur les caractéristiques, quantités et besoins de votre achat professionnel.",
+          "question": "Que doit préciser une demande de parure de lit ?",
+          "answer": "Nous voulons connaître chaque pièce de la parure : housse, nombre de taies, mesures et fermeture. Si vous comparez une matière lisse avec notre gamme en gaze de coton, précisez-le dans la demande. Cela nous permet de discuter de la construction textile adaptée à votre projet.",
+          "specs": "Housse|Largeur et longueur de la couette\nFermeture|Position de l’ouverture et fermeture souhaitée\nParure|Dimensions des taies et nombre de pièces",
+          "imageAlt": "Housse de couette"
+        },
+        "de": {
+          "name": "Bettbezüge",
+          "lead": "Wir betrachten den Bettbezug als verbindendes Element einer Bettwäschekollektion.",
+          "heading": "Für uns gehört der Verschluss zum Entwurf",
+          "paragraph1": "Material und Farbe geben die Richtung vor; die praktischen Details möchten wir ebenfalls festhalten. Dazu gehören die Bettdeckenmaße, die Position der Öffnung und der gewünschte Verschluss. Beschreiben Sie uns, ob die Kollektion für Zuhause oder für Hotels gedacht ist.",
+          "paragraph2": "Kissenbezüge möchten wir möglichst im selben Gespräch berücksichtigen. Maße, Kantenverarbeitung und Stückzahlen bestimmen, was ein Set enthalten soll. Ein Referenzbild hilft bei der Gestaltung, ersetzt aber keine schriftliche Beschreibung von Material, Farbe und Verarbeitung als Grundlage der Angebotsanfrage.",
+          "metaTitle": "Bettbezüge Hersteller Türkei | TVS Textile",
+          "metaDescription": "Bettbezüge aus unserer eigenen Fabrik in Denizli. Besprechen Sie Spezifikationen, Mengen und Ihren Textileinkauf mit TVS Textile.",
+          "question": "Was gehört in die Anfrage für ein Bettwäsche-Set?",
+          "answer": "Beschreiben Sie jedes Teil: Bettbezug, Anzahl und Maße der Kissenbezüge sowie Verschluss. Wenn Sie einen glatten Stoff mit Musselin vergleichen, nennen Sie diesen Unterschied ausdrücklich. Dann können wir die für Ihr Vorhaben gewünschte Textilkonstruktion besprechen.",
+          "specs": "Bezug|Breite und Länge der Bettdecke\nVerschluss|Öffnungsposition und gewünschte Verschlussart\nSet|Kissenmaße und Stückzahl je Set",
+          "imageAlt": "Bettbezüge"
+        },
+        "es": {
+          "name": "Fundas nórdicas",
+          "lead": "Vemos la funda nórdica como una pieza que une su colección de ropa de cama.",
+          "heading": "Para nosotros, el cierre también forma parte del diseño",
+          "paragraph1": "Tejido y color marcan la dirección, pero queremos recoger los detalles prácticos. Medidas del edredón, posición de la abertura y tipo de cierre deben aparecer en la ficha. Cuéntenos si el proyecto es para el hogar o para hoteles, porque las prioridades de uso pueden cambiar.",
+          "paragraph2": "Preferimos comentar las fundas de almohada en la misma conversación. Sus medidas, acabados y cantidades definen lo que debe incluir el conjunto. Una imagen ayuda a explicar el estilo; queremos además una descripción escrita de material, color y confección como base de la consulta.",
+          "metaTitle": "Fabricante de fundas nórdicas en Turquía | TVS Textile",
+          "metaDescription": "Fundas nórdicas de nuestra propia fábrica en Denizli. Consulte especificaciones, cantidades y los requisitos de su compra profesional con TVS Textile.",
+          "question": "¿Qué debe incluir la consulta de un juego de cama?",
+          "answer": "Describa cada pieza: funda nórdica, número y medidas de fundas de almohada y cierre. Si compara un tejido liso con muselina, indíquelo expresamente. Así podremos conversar sobre la construcción textil que desea para su colección.",
+          "specs": "Funda|Ancho y largo del edredón\nCierre|Posición de apertura y cierre deseado\nJuego|Medidas de almohada y piezas por juego",
+          "imageAlt": "Fundas nórdicas"
+        }
+      }
+    },
+    {
+      "slug": "bathrobes",
+      "group": 1,
+      "active": true,
+      "image": "/img/products/bathrobes.webp",
+      "realPhoto": false,
+      "updated": "2026-10-06",
+      "locales": {
+        "en": {
+          "name": "Bathrobes",
+          "lead": "We approach a bathrobe as something a guest or customer will wear, not simply a textile measured by weight.",
+          "heading": "We begin with the wearer and the setting",
+          "paragraph1": "A spa robe and a homewear robe can share a fabric yet need different shapes. We ask about the intended wearer, the size range and your preferred collar, hood and belt details. Fabric weight is part of that conversation, alongside the feel and drying expectations you want us to consider.",
+          "paragraph2": "For hotel projects, we also want to know how the robes will be laundered and identified. If you need embroidery, describe its position and send a suitable artwork reference. We discuss those details before treating the robe as a finished specification; quantities should be broken down by size rather than supplied as one total.",
+          "metaTitle": "Bathrobes Manufacturer in Turkey | TVS Textile",
+          "metaDescription": "Bathrobes from our own Denizli factory. Discuss product specifications, quantities and your wholesale sourcing brief with TVS Textile.",
+          "question": "How do we describe the bathrobe style we need?",
+          "answer": "A front and back reference helps us understand the robe shape. Add the collar or hood style, belt details, finished length and size breakdown. If your enquiry includes a logo, send its position and artwork as a requirement to review; we will confirm the relevant finishing options for the project.",
+          "specs": "Shape|Collar, hood, sleeve and belt preferences\nSizes|Finished robe measurements and quantities by size\nUse|Hotel, spa or homewear laundering requirements",
+          "imageAlt": "Bathrobes"
+        },
+        "fr": {
+          "name": "Peignoir",
+          "lead": "Pour nous, un peignoir se définit autour de la personne qui le portera et de son usage.",
+          "heading": "Nous parlons de la coupe avant de résumer le tissu",
+          "paragraph1": "Un peignoir pour le spa et un modèle pour la maison peuvent demander des silhouettes différentes. Nous vous invitons à préciser les tailles, le col ou la capuche, la ceinture et le toucher recherché. Le grammage fait partie de l’échange, sans remplacer ces détails de coupe.",
+          "paragraph2": "Pour l’hôtellerie, nous souhaitons connaître les conditions de lavage et les besoins d’identification. Si vous prévoyez une broderie, indiquez son emplacement et partagez une référence graphique adaptée. Nous vous proposons de répartir les quantités par taille afin de discuter du projet avec davantage de précision.",
+          "metaTitle": "Fabricant de peignoir en Turquie | TVS Textile",
+          "metaDescription": "Peignoir : fabrication dans notre propre usine à Denizli. Échangeons sur les caractéristiques, quantités et besoins de votre achat professionnel.",
+          "question": "Comment nous présenter le modèle de peignoir recherché ?",
+          "answer": "Une vue de face et de dos nous aide à comprendre la coupe. Ajoutez le col ou la capuche, la ceinture, la longueur finie et les quantités par taille. Pour un logo, transmettez le dessin et son emplacement comme exigence à examiner ; les possibilités de finition restent à confirmer.",
+          "specs": "Coupe|Col, capuche, manches et ceinture\nTailles|Mesures finies et quantités par taille\nUsage|Conditions de lavage en hôtel, spa ou à domicile",
+          "imageAlt": "Peignoir"
+        },
+        "de": {
+          "name": "Bademäntel",
+          "lead": "Für uns ist ein Bademantel ein Kleidungsstück für einen konkreten Nutzer und Einsatzort.",
+          "heading": "Wir sprechen über Schnitt und Größen",
+          "paragraph1": "Ein Spa-Bademantel und ein Modell für Zuhause können trotz ähnlichem Stoff unterschiedliche Formen benötigen. Wir möchten Größenbereich, Kragen oder Kapuze sowie Gürteldetails besprechen. Das Stoffgewicht ist dabei ein Bestandteil des Entwurfs, nicht seine vollständige Beschreibung.",
+          "paragraph2": "Für Hotelprojekte interessieren uns auch Waschbedingungen und Kennzeichnung. Wenn Sie eine Stickerei wünschen, nennen Sie die Position und teilen Sie eine geeignete Grafikvorlage. Wir möchten die Mengen nach Größe aufgeteilt sehen, damit sich die einzelnen Varianten klar in der Anfrage wiederfinden.",
+          "metaTitle": "Bademäntel Hersteller Türkei | TVS Textile",
+          "metaDescription": "Bademäntel aus unserer eigenen Fabrik in Denizli. Besprechen Sie Spezifikationen, Mengen und Ihren Textileinkauf mit TVS Textile.",
+          "question": "Wie beschreiben Sie den gewünschten Bademantelschnitt?",
+          "answer": "Eine Vorder- und Rückansicht hilft uns beim Verständnis. Ergänzen Sie Kragen oder Kapuze, Gürtel, fertige Länge und Größenmengen. Für ein Logo senden Sie Position und Vorlage als zu prüfende Anforderung. Die verfügbaren Verarbeitungsoptionen bestätigen wir für das Projekt.",
+          "specs": "Schnitt|Kragen, Kapuze, Ärmel und Gürtel\nGrößen|Fertigmaße und Mengen je Größe\nNutzung|Waschbedingungen für Hotel, Spa oder Zuhause",
+          "imageAlt": "Bademäntel"
+        },
+        "es": {
+          "name": "Albornoces",
+          "lead": "Para nosotros, un albornoz se define alrededor de quien lo llevará y de dónde lo usará.",
+          "heading": "Hablamos de tallas y forma antes de resumir el tejido",
+          "paragraph1": "Un albornoz de spa y uno de hogar pueden necesitar cortes diferentes aunque compartan material. Queremos conocer las tallas, el cuello o la capucha y los detalles del cinturón. El gramaje forma parte de esa conversación, junto con el tacto y las expectativas de secado.",
+          "paragraph2": "En proyectos de hotel también nos interesa el lavado y la identificación. Si desea bordado, indique su posición y comparta una referencia gráfica adecuada. Le proponemos separar las cantidades por talla para que cada variante quede clara en la solicitud.",
+          "metaTitle": "Fabricante de albornoces en Turquía | TVS Textile",
+          "metaDescription": "Albornoces de nuestra propia fábrica en Denizli. Consulte especificaciones, cantidades y los requisitos de su compra profesional con TVS Textile.",
+          "question": "¿Cómo presentar el estilo de albornoz que necesita?",
+          "answer": "Una referencia frontal y posterior nos ayuda a entender el corte. Añada cuello o capucha, cinturón, largo final y cantidades por talla. Si necesita un logo, envíe diseño y posición como requisito a revisar; las opciones de acabado se confirman para el proyecto.",
+          "specs": "Corte|Cuello, capucha, mangas y cinturón\nTallas|Medidas finales y cantidades por talla\nUso|Lavado en hotel, spa o hogar",
+          "imageAlt": "Albornoces"
+        }
+      }
+    },
+    {
+      "slug": "towels",
+      "group": 1,
+      "active": true,
+      "image": "/img/products/towels.webp",
+      "realPhoto": false,
+      "updated": "2026-10-06",
+      "locales": {
+        "en": {
+          "name": "Towels",
+          "lead": "For us, a towel brief should explain what the towel is expected to do.",
+          "heading": "We balance size, weight and intended use",
+          "paragraph1": "A hand towel, a bath towel and a spa towel should not be reduced to one generic specification. We ask for the dimensions and quantities of each format, then discuss composition, weight in GSM and colour. Those details let us understand the range you are trying to build.",
+          "paragraph2": "We also ask about care conditions because hotel laundering and domestic washing can set different priorities. A heavier towel is not automatically the right choice for every project. Tell us how you want to balance feel, absorbency requirements and drying expectations, and which border or identification details belong in the brief.",
+          "metaTitle": "Towels Manufacturer in Turkey | TVS Textile",
+          "metaDescription": "Towels from our own Denizli factory. Discuss product specifications, quantities and your wholesale sourcing brief with TVS Textile.",
+          "question": "What does a towel enquiry need beyond a GSM figure?",
+          "answer": "We also ask for dimensions, composition, intended use and the finish you expect. Separate each towel size and quantity in your brief. For hotel and spa enquiries, describe the laundering routine and any identifying artwork you want us to review; a weight figure alone leaves those decisions open.",
+          "specs": "Dimensions|Separate hand, bath or other towel sizes\nWeight|Requested GSM and composition\nFinish|Border, colour and identification requirements",
+          "imageAlt": "Towels"
+        },
+        "fr": {
+          "name": "Serviettes de bain",
+          "lead": "Nous voulons savoir ce que vous attendez d’une serviette avant de parler de grammage.",
+          "heading": "Nous distinguons les formats et les usages",
+          "paragraph1": "Une serviette pour les mains, une serviette de bain et une serviette de spa ne se décrivent pas nécessairement de la même façon. Nous vous demandons les dimensions et les quantités de chaque format, puis les matières et les couleurs envisagées. Cela nous aide à comprendre la gamme que vous souhaitez construire.",
+          "paragraph2": "Nous souhaitons également aborder l’entretien. Les conditions de lavage d’un hôtel peuvent orienter le projet différemment d’un usage domestique. Un grammage élevé n’est pas une réponse universelle : présentez-nous vos attentes de toucher, d’absorption et de séchage, ainsi que les bordures ou détails d’identification à prévoir.",
+          "metaTitle": "Fabricant de serviettes de bain en Turquie | TVS Textile",
+          "metaDescription": "Serviettes de bain : fabrication dans notre propre usine à Denizli. Échangeons sur les caractéristiques, quantités et besoins de votre achat professionnel.",
+          "question": "Le grammage suffit-il pour demander des serviettes ?",
+          "answer": "Nous demandons également les mesures, la composition, l’usage et la finition. Séparez les tailles et quantités. Pour un hôtel ou spa, décrivez le lavage et joignez les éléments d’identification à examiner. Un chiffre de grammage ne précise pas à lui seul ces choix.",
+          "specs": "Dimensions|Mesures distinctes pour chaque type de serviette\nGrammage|GSM souhaité et composition\nFinition|Bordure, couleur et identification",
+          "imageAlt": "Serviettes de bain"
+        },
+        "de": {
+          "name": "Handtücher",
+          "lead": "Wir möchten zuerst verstehen, welche Aufgabe ein Handtuch in Ihrem Sortiment erfüllen soll.",
+          "heading": "Wir unterscheiden Format, Gewicht und Nutzung",
+          "paragraph1": "Handtücher für Hände, Bad oder Spa müssen nicht dieselbe Spezifikation haben. Wir fragen nach Maßen und Mengen je Format und möchten danach Zusammensetzung, GSM und Farben besprechen. So erkennen wir, wie die einzelnen Teile Ihres Sortiments zusammengehören.",
+          "paragraph2": "Die Pflegebedingungen gehören für uns ebenfalls dazu. Hotelwäsche und Waschen im Haushalt können unterschiedliche Prioritäten setzen. Ein höheres Stoffgewicht ist nicht automatisch für jedes Projekt passend. Beschreiben Sie die gewünschte Haptik, die Anforderungen an Saugfähigkeit und Trocknung sowie Bordüren oder Kennzeichnungen.",
+          "metaTitle": "Handtücher Hersteller Türkei | TVS Textile",
+          "metaDescription": "Handtücher aus unserer eigenen Fabrik in Denizli. Besprechen Sie Spezifikationen, Mengen und Ihren Textileinkauf mit TVS Textile.",
+          "question": "Welche Angaben brauchen wir außer dem Handtuchgewicht?",
+          "answer": "Wir fragen auch nach Maßen, Zusammensetzung, Nutzung und Verarbeitung. Teilen Sie Größen und Mengen getrennt auf. Für Hotel und Spa beschreiben Sie die Waschbedingungen und gewünschte Kennzeichnung. Eine GSM-Zahl beantwortet diese Fragen noch nicht.",
+          "specs": "Maße|Separate Maße für jede Handtuchart\nGewicht|Gewünschte GSM und Zusammensetzung\nVerarbeitung|Bordüre, Farbe und Kennzeichnung",
+          "imageAlt": "Handtücher"
+        },
+        "es": {
+          "name": "Toallas",
+          "lead": "Queremos saber qué espera de una toalla antes de centrarnos en su gramaje.",
+          "heading": "Distinguimos formatos, peso y uso",
+          "paragraph1": "Una toalla de manos, una de baño y una de spa no tienen por qué compartir ficha. Pedimos medidas y cantidades para cada formato y después comentamos composición, GSM y colores. Así podemos entender cómo encajan las piezas de su gama.",
+          "paragraph2": "Los cuidados también forman parte del proyecto. El lavado de un hotel puede plantear prioridades diferentes al doméstico. Más gramaje no es una respuesta universal. Cuéntenos el tacto que busca, sus requisitos de absorción y secado y los bordes o detalles de identificación que desea incluir.",
+          "metaTitle": "Fabricante de toallas en Turquía | TVS Textile",
+          "metaDescription": "Toallas de nuestra propia fábrica en Denizli. Consulte especificaciones, cantidades y los requisitos de su compra profesional con TVS Textile.",
+          "question": "¿Qué necesita una consulta de toallas además del gramaje?",
+          "answer": "Pedimos medidas, composición, uso y acabado. Separe cantidades por tamaño. Para hotel y spa, describa el lavado y la identificación que desea revisar. Una cifra de GSM no define por sí sola estas decisiones del producto.",
+          "specs": "Medidas|Dimensiones separadas para cada tipo de toalla\nGramaje|GSM solicitado y composición\nAcabado|Cenefa, color e identificación",
+          "imageAlt": "Toallas"
+        }
+      }
+    },
+    {
+      "slug": "sauna-wraps",
+      "group": 1,
+      "active": true,
+      "image": "/img/products/sauna-wraps.webp",
+      "realPhoto": false,
+      "updated": "2026-10-06",
+      "locales": {
+        "en": {
+          "name": "Sauna wraps",
+          "lead": "We see a sauna wrap as a product whose fit deserves as much attention as its fabric.",
+          "heading": "We work from coverage and fastening",
+          "paragraph1": "Before discussing a sauna wrap, we want to know the coverage you have in mind. Length, waist range and fastening preferences determine how the product should be specified. We ask you to describe the intended spa or sauna setting rather than assume that one size will suit every guest.",
+          "paragraph2": "Fabric weight and absorbency requirements come next, together with laundering conditions. We also want to clarify whether you need one unisex format or separate variants. Breaking the enquiry down this way gives the quotation a clearer basis and helps avoid an attractive photograph standing in for the actual measurements.",
+          "metaTitle": "Sauna wraps Manufacturer in Turkey | TVS Textile",
+          "metaDescription": "Sauna wraps from our own Denizli factory. Discuss product specifications, quantities and your wholesale sourcing brief with TVS Textile.",
+          "question": "How do we prepare a sauna-wrap specification?",
+          "answer": "We start with coverage and adjustment. Give us the intended waist range, finished length and fastening reference, then explain the textile feel you are looking for. If the wraps belong with towels or robes in a spa collection, send the coordinated colour brief and quantities together.",
+          "specs": "Coverage|Finished length and waist range\nFastening|Preferred closure and adjustment\nCare|Spa washing conditions and fabric requirement",
+          "imageAlt": "Sauna wraps"
+        },
+        "fr": {
+          "name": "Kilts de sauna",
+          "lead": "Nous abordons le kilt de sauna par son ajustement et la couverture souhaitée.",
+          "heading": "Nous précisons la longueur et la fermeture",
+          "paragraph1": "Avant de discuter du tissu, nous souhaitons connaître la longueur, le tour de taille et le système de fermeture envisagés. Présentez-nous le cadre d’utilisation du sauna ou du spa. Nous préférons définir les mesures utiles plutôt que supposer qu’une taille unique répondra à tous les besoins.",
+          "paragraph2": "Le grammage, les attentes d’absorption et les conditions de lavage complètent ensuite le cahier des charges. Dites-nous si vous recherchez un modèle unisexe ou plusieurs variantes. Cette distinction permet de relier chaque quantité à un format précis, au lieu de laisser une photographie tenir lieu de spécification.",
+          "metaTitle": "Fabricant de kilts de sauna en Turquie | TVS Textile",
+          "metaDescription": "Kilts de sauna : fabrication dans notre propre usine à Denizli. Échangeons sur les caractéristiques, quantités et besoins de votre achat professionnel.",
+          "question": "Comment préparer une demande de kilt de sauna ?",
+          "answer": "Nous partons du tour de taille, de la longueur et du réglage souhaité. Ajoutez une référence de fermeture et décrivez la texture recherchée. Si le kilt accompagne peignoirs et serviettes, transmettez le projet de couleurs coordonnées et les quantités de l’ensemble.",
+          "specs": "Couverture|Longueur finie et plage de tour de taille\nFermeture|Référence du réglage souhaité\nEntretien|Lavage du spa et matière demandée",
+          "imageAlt": "Kilts de sauna"
+        },
+        "de": {
+          "name": "Saunakilts",
+          "lead": "Wir besprechen einen Saunakilt zuerst über Passform und gewünschte Abdeckung.",
+          "heading": "Wir klären Länge, Umfang und Verschluss",
+          "paragraph1": "Bevor wir auf den Stoff eingehen, möchten wir Länge, Taillenumfang und Verschluss verstehen. Erzählen Sie uns vom vorgesehenen Sauna- oder Spa-Einsatz. Statt eine Einheitsgröße vorauszusetzen, möchten wir die tatsächlich benötigten Maße festhalten.",
+          "paragraph2": "Danach besprechen wir Stoffgewicht, Anforderungen an die Saugfähigkeit und Waschbedingungen. Teilen Sie uns mit, ob Sie ein Unisex-Modell oder mehrere Varianten planen. Diese Aufteilung verbindet jede Menge mit einem klar beschriebenen Format und verhindert, dass ein Bild die Maße ersetzen soll.",
+          "metaTitle": "Saunakilts Hersteller Türkei | TVS Textile",
+          "metaDescription": "Saunakilts aus unserer eigenen Fabrik in Denizli. Besprechen Sie Spezifikationen, Mengen und Ihren Textileinkauf mit TVS Textile.",
+          "question": "Wie bereiten Sie eine Saunakilt-Anfrage vor?",
+          "answer": "Wir beginnen mit Umfang, Länge und gewünschter Einstellung. Senden Sie eine Verschlussvorlage und beschreiben Sie die Textur. Wenn Kilts zu Handtüchern oder Bademänteln gehören sollen, hilft uns ein gemeinsamer Farbbrief mit den jeweiligen Mengen.",
+          "specs": "Abdeckung|Fertiglänge und Taillenumfang\nVerschluss|Vorlage für Einstellung und Befestigung\nPflege|Spa-Waschbedingungen und Material",
+          "imageAlt": "Saunakilts"
+        },
+        "es": {
+          "name": "Pareos de sauna",
+          "lead": "Abordamos un pareo de sauna por su ajuste y la cobertura que necesita.",
+          "heading": "Queremos concretar longitud y cierre",
+          "paragraph1": "Antes del tejido, nos interesa conocer longitud, contorno de cintura y cierre. Describa el uso previsto en sauna o spa. Preferimos trabajar con medidas concretas en lugar de dar por hecho que una talla única responderá a todas las necesidades.",
+          "paragraph2": "Después comentamos gramaje, absorción y condiciones de lavado. Díganos si plantea un modelo unisex o varias variantes. Esta separación permite relacionar cada cantidad con un formato y evita que una fotografía sustituya las medidas del producto.",
+          "metaTitle": "Fabricante de pareos de sauna en Turquía | TVS Textile",
+          "metaDescription": "Pareos de sauna de nuestra propia fábrica en Denizli. Consulte especificaciones, cantidades y los requisitos de su compra profesional con TVS Textile.",
+          "question": "¿Cómo preparar una especificación de pareo de sauna?",
+          "answer": "Empezamos por cintura, largo y ajuste. Comparta una referencia de cierre y la textura deseada. Si el pareo forma parte de una gama con toallas y albornoces, envíe los colores coordinados y las cantidades de cada producto.",
+          "specs": "Cobertura|Largo final y rango de cintura\nCierre|Referencia de ajuste y sujeción\nCuidados|Lavado del spa y material",
+          "imageAlt": "Pareos de sauna"
+        }
+      }
+    },
+    {
+      "slug": "spa-headbands",
+      "group": 1,
+      "active": true,
+      "image": "/img/products/spa-headbands.webp",
+      "realPhoto": false,
+      "updated": "2026-10-06",
+      "locales": {
+        "en": {
+          "name": "Spa headbands",
+          "lead": "We treat a spa headband as a functional part of a treatment routine.",
+          "heading": "We ask how it will be worn",
+          "paragraph1": "The width of the band and the head circumference range tell us more than a colour reference alone. We want to discuss whether you prefer an elastic fit or an adjustable fastening, and how the band should keep hair away from the treatment area. Describe the setting and the intended wearer in your enquiry.",
+          "paragraph2": "For a spa collection, we also consider how you want the band to coordinate with the towels and wraps. Share the care conditions and quantity per colour, and tell us about any identification detail. We keep those requirements separate from decorative preferences so that the brief remains easy to review.",
+          "metaTitle": "Spa headbands Manufacturer in Turkey | TVS Textile",
+          "metaDescription": "Spa headbands from our own Denizli factory. Discuss product specifications, quantities and your wholesale sourcing brief with TVS Textile.",
+          "question": "Which fit details matter for a spa headband?",
+          "answer": "We ask for more than a single flat measurement. Describe the head-size range, preferred band width and how you want the band to adjust. A reference showing the fastening is helpful. Include the washing routine and the number of bands required for your spa or retail packs.",
+          "specs": "Fit|Head circumference range and band width\nConstruction|Elastic or adjustable fastening reference\nUse|Treatment setting and washing routine",
+          "imageAlt": "Spa headbands"
+        },
+        "fr": {
+          "name": "Bandeaux de spa",
+          "lead": "Nous voyons le bandeau de spa comme un accessoire lié au déroulement du soin.",
+          "heading": "Nous demandons comment le bandeau sera porté",
+          "paragraph1": "La largeur, le tour de tête et le type de maintien donnent une base concrète à notre discussion. Souhaitez-vous un ajustement élastique ou une fermeture réglable ? Présentez-nous le soin et l’utilisateur prévus pour que nous puissions parler de la fonction du bandeau avant de nous concentrer sur sa couleur.",
+          "paragraph2": "Pour une collection de spa, nous pouvons aussi discuter de l’accord visuel avec vos serviettes et kilts. Précisez les conditions de lavage, les quantités par couleur et les détails d’identification. Nous gardons ces éléments fonctionnels dans le cahier des charges afin que les choix décoratifs ne les masquent pas.",
+          "metaTitle": "Fabricant de bandeaux de spa en Turquie | TVS Textile",
+          "metaDescription": "Bandeaux de spa : fabrication dans notre propre usine à Denizli. Échangeons sur les caractéristiques, quantités et besoins de votre achat professionnel.",
+          "question": "Quels détails préciser pour un bandeau de spa ?",
+          "answer": "Une seule mesure à plat ne suffit pas à décrire votre besoin. Indiquez la plage de tour de tête, la largeur et le réglage souhaité. Une référence de fermeture est utile. Ajoutez la routine de lavage et le nombre de bandeaux par lot professionnel ou paquet de vente.",
+          "specs": "Ajustement|Plage de tour de tête et largeur\nConstruction|Référence élastique ou fermeture réglable\nUsage|Type de soins et lavage",
+          "imageAlt": "Bandeaux de spa"
+        },
+        "de": {
+          "name": "Spa Stirnbänder",
+          "lead": "Wir sehen ein Spa-Stirnband als funktionalen Teil einer Behandlung.",
+          "heading": "Wir fragen nach dem Sitz während der Anwendung",
+          "paragraph1": "Breite, Kopfumfang und Befestigung geben unserer Diskussion eine konkrete Grundlage. Wünschen Sie eine elastische Passform oder einen verstellbaren Verschluss? Beschreiben Sie die Behandlung und die vorgesehenen Nutzer, damit wir zuerst über die Funktion sprechen können.",
+          "paragraph2": "Für eine Spa-Kollektion können wir anschließend die optische Abstimmung mit Handtüchern und Kilts besprechen. Nennen Sie Waschbedingungen, Mengen je Farbe und gewünschte Kennzeichnungen. Diese Anforderungen möchten wir neben den gestalterischen Wünschen sichtbar halten.",
+          "metaTitle": "Spa Stirnbänder Hersteller Türkei | TVS Textile",
+          "metaDescription": "Spa Stirnbänder aus unserer eigenen Fabrik in Denizli. Besprechen Sie Spezifikationen, Mengen und Ihren Textileinkauf mit TVS Textile.",
+          "question": "Welche Passformangaben braucht ein Spa-Stirnband?",
+          "answer": "Ein flaches Einzelmaß beschreibt Ihren Bedarf nicht vollständig. Nennen Sie Kopfumfangbereich, Breite und gewünschte Einstellung. Eine Verschlussvorlage hilft. Ergänzen Sie den Waschablauf und die Zahl der Bänder je Betriebspaket oder Verkaufseinheit.",
+          "specs": "Passform|Kopfumfangbereich und Bandbreite\nAufbau|Gummizug oder verstellbarer Verschluss\nNutzung|Behandlungsbereich und Waschablauf",
+          "imageAlt": "Spa Stirnbänder"
+        },
+        "es": {
+          "name": "Diademas de spa",
+          "lead": "Vemos una diadema de spa como una parte funcional del tratamiento.",
+          "heading": "Preguntamos cómo debe mantenerse en su sitio",
+          "paragraph1": "Ancho, contorno de cabeza y sujeción ofrecen una base concreta para conversar. ¿Prefiere ajuste elástico o cierre regulable? Queremos conocer el tratamiento y la persona que utilizará la diadema antes de centrarnos en su color.",
+          "paragraph2": "Para una colección de spa podemos comentar después la coordinación con toallas y pareos. Comparta los cuidados, las cantidades por color y los detalles de identificación. Queremos mantener visibles esas necesidades funcionales junto a las preferencias decorativas.",
+          "metaTitle": "Fabricante de diademas de spa en Turquía | TVS Textile",
+          "metaDescription": "Diademas de spa de nuestra propia fábrica en Denizli. Consulte especificaciones, cantidades y los requisitos de su compra profesional con TVS Textile.",
+          "question": "¿Qué detalles de ajuste necesita una diadema de spa?",
+          "answer": "Una medida en plano no describe todo el requisito. Indique contorno, ancho y ajuste deseados. Una referencia del cierre ayuda. Añada el lavado previsto y las unidades por lote profesional o paquete de venta.",
+          "specs": "Ajuste|Rango de contorno de cabeza y ancho\nConstrucción|Elástico o cierre ajustable\nUso|Tratamiento y rutina de lavado",
+          "imageAlt": "Diademas de spa"
+        }
+      }
+    },
+    {
+      "slug": "makeup-remover-cloths",
+      "group": 1,
+      "active": true,
+      "image": "/img/products/makeup-remover-cloths.webp",
+      "realPhoto": false,
+      "updated": "2026-10-06",
+      "locales": {
+        "en": {
+          "name": "Makeup remover cloths",
+          "lead": "We discuss makeup remover cloths through their surface, size and intended routine.",
+          "heading": "We keep the textile brief specific",
+          "paragraph1": "A small cloth can have a very different purpose from a bath towel. We ask what dimensions you need and which composition and surface texture you want us to consider. The intended use should be stated clearly; we do not infer skin benefits or cleansing performance from a photograph.",
+          "paragraph2": "Packaging and care information also belong in the conversation. Tell us the number of cloths per pack, your preferred colour breakdown and how you expect the textile to be washed. If the cloth is part of a wider spa range, we can discuss the visual coordination without assuming that every item needs the same fabric.",
+          "metaTitle": "Makeup remover cloths Manufacturer in Turkey | TVS Textile",
+          "metaDescription": "Makeup remover cloths from our own Denizli factory. Discuss product specifications, quantities and your wholesale sourcing brief with TVS Textile.",
+          "question": "How do we define a makeup-remover cloth pack?",
+          "answer": "Tell us the size and surface feel you want, together with the intended cleaning and washing routine. We also need the number of cloths per pack and the presentation you would like to discuss. Do not infer a fabric composition or a specific skin-performance claim from the concept photograph.",
+          "specs": "Cloth|Finished dimensions and surface-texture reference\nCare|Composition and intended washing instructions\nPack|Units per pack and presentation",
+          "imageAlt": "Makeup remover cloths"
+        },
+        "fr": {
+          "name": "Lingettes démaquillantes",
+          "lead": "Nous parlons d’une lingette démaquillante à partir de sa surface, de son format et de l’usage prévu.",
+          "heading": "Nous décrivons le textile sans présumer ses effets",
+          "paragraph1": "Une petite lingette ne se définit pas comme une serviette de bain. Nous vous invitons à préciser les dimensions, la composition et la texture recherchées. Nous ne déduisons pas de bénéfice pour la peau ni de performance de nettoyage à partir d’une photo : l’usage doit être décrit dans votre demande.",
+          "paragraph2": "Le conditionnement et l’entretien font également partie de l’échange. Indiquez le nombre de lingettes par lot, les couleurs et les conditions de lavage envisagées. Si la lingette rejoint une collection de spa, nous pouvons parler de cohérence visuelle sans supposer que toutes les pièces doivent avoir la même matière.",
+          "metaTitle": "Fabricant de lingettes démaquillantes en Turquie | TVS Textile",
+          "metaDescription": "Lingettes démaquillantes : fabrication dans notre propre usine à Denizli. Échangeons sur les caractéristiques, quantités et besoins de votre achat professionnel.",
+          "question": "Comment définir un lot de lingettes démaquillantes ?",
+          "answer": "Précisez les dimensions et la texture, puis l’usage et le lavage envisagés. Nous souhaitons aussi connaître le nombre de lingettes par lot et leur présentation. Une image conceptuelle ne confirme ni la composition ni une promesse particulière concernant la peau.",
+          "specs": "Lingette|Dimensions et référence de texture\nEntretien|Composition et lavage prévu\nLot|Nombre de pièces et présentation",
+          "imageAlt": "Lingettes démaquillantes"
+        },
+        "de": {
+          "name": "Abschminktücher",
+          "lead": "Wir betrachten Abschminktücher über ihre Oberfläche, ihre Maße und den beschriebenen Verwendungszweck.",
+          "heading": "Wir bleiben bei der tatsächlichen Textilspezifikation",
+          "paragraph1": "Ein kleines Tuch benötigt einen anderen Brief als ein Badetuch. Wir möchten Maße, Zusammensetzung und gewünschte Oberflächenstruktur kennen. Aus einem Foto leiten wir keine Hautwirkung oder Reinigungsleistung ab; der vorgesehene Einsatz gehört ausdrücklich in die Anfrage.",
+          "paragraph2": "Verpackung und Pflege sind weitere Punkte, die wir besprechen möchten. Nennen Sie Stückzahlen je Packung, Farben und Waschbedingungen. Für eine gemeinsame Spa-Kollektion können wir die Gestaltung abstimmen, ohne vorauszusetzen, dass jedes Produkt aus demselben Stoff bestehen muss.",
+          "metaTitle": "Abschminktücher Hersteller Türkei | TVS Textile",
+          "metaDescription": "Abschminktücher aus unserer eigenen Fabrik in Denizli. Besprechen Sie Spezifikationen, Mengen und Ihren Textileinkauf mit TVS Textile.",
+          "question": "Wie spezifizieren Sie eine Packung Abschminktücher?",
+          "answer": "Beschreiben Sie Größe und Oberfläche sowie den vorgesehenen Gebrauch und Waschablauf. Wir möchten auch Stückzahl und Präsentation kennen. Aus dem Konzeptbild dürfen weder eine bestimmte Zusammensetzung noch besondere Aussagen zur Hautwirkung abgeleitet werden.",
+          "specs": "Tuch|Fertigmaße und Oberflächenvorlage\nPflege|Zusammensetzung und Waschvorgaben\nPackung|Stückzahl und Präsentation",
+          "imageAlt": "Abschminktücher"
+        },
+        "es": {
+          "name": "Toallitas desmaquillantes",
+          "lead": "Comentamos las toallitas desmaquillantes a partir de su superficie, tamaño y uso previsto.",
+          "heading": "Nos centramos en la ficha real del tejido",
+          "paragraph1": "Una pieza pequeña no se describe como una toalla de baño. Queremos conocer medidas, composición y textura deseada. No deducimos beneficios para la piel ni rendimiento de limpieza de una imagen; el uso debe quedar explícito en la consulta.",
+          "paragraph2": "También queremos hablar del embalaje y el cuidado. Indique unidades por paquete, colores y condiciones de lavado. Si las toallitas forman parte de una gama de spa, podemos comentar la coherencia visual sin asumir que todos sus productos necesitan el mismo tejido.",
+          "metaTitle": "Fabricante de toallitas desmaquillantes en Turquía | TVS Textile",
+          "metaDescription": "Toallitas desmaquillantes de nuestra propia fábrica en Denizli. Consulte especificaciones, cantidades y los requisitos de su compra profesional con TVS Textile.",
+          "question": "¿Cómo definir un paquete de toallitas desmaquillantes?",
+          "answer": "Explique dimensiones, textura, uso y lavado. También queremos conocer unidades por paquete y presentación. Una fotografía conceptual no confirma composición ni una promesa concreta sobre efectos en la piel.",
+          "specs": "Paño|Medidas finales y referencia de superficie\nCuidados|Composición y lavado previsto\nPaquete|Unidades y presentación",
+          "imageAlt": "Toallitas desmaquillantes"
+        }
+      }
+    },
+    {
+      "slug": "baby-ponchos",
+      "group": 2,
+      "active": true,
+      "image": "/img/products/baby-ponchos.webp",
+      "realPhoto": false,
+      "updated": "2026-10-06",
+      "locales": {
+        "en": {
+          "name": "Baby ponchos",
+          "lead": "We begin a baby poncho enquiry with the child’s size and the way the poncho will be used.",
+          "heading": "We define the shape before the colour",
+          "paragraph1": "The intended age range is useful, but we also want the finished dimensions rather than relying on age labels alone. We ask you to describe the hood, the opening and the coverage you have in mind. The fabric and care instructions then become part of a more complete brief.",
+          "paragraph2": "A bath collection and a beach collection can ask different things of a poncho. Tell us which setting you are planning and how the product should coordinate with the rest of your range. Any destination-market labelling or testing requirement needs to be discussed for the actual design; we do not assume that a category image proves compliance.",
+          "metaTitle": "Baby ponchos Manufacturer in Turkey | TVS Textile",
+          "metaDescription": "Baby ponchos from our own Denizli factory. Discuss product specifications, quantities and your wholesale sourcing brief with TVS Textile.",
+          "question": "What do we need to discuss for a baby poncho?",
+          "answer": "We want the intended size range and actual finished dimensions rather than an age label alone. Include the hood reference, textile composition you require and care brief. Any destination-market testing, labelling and safety documentation must be reviewed against the final poncho design.",
+          "specs": "Sizing|Intended age range and finished body measurements\nHood|Shape and construction reference\nCollection|Colour, fabric and quantities by size",
+          "imageAlt": "Baby ponchos"
+        },
+        "fr": {
+          "name": "Ponchos bébé",
+          "lead": "Nous commençons un projet de poncho bébé par les dimensions et l’usage, avant les motifs.",
+          "heading": "Nous définissons la forme et la couverture",
+          "paragraph1": "L’âge visé est une information utile, mais nous souhaitons aussi les mesures finies. Décrivez la capuche, l’ouverture et la couverture que vous recherchez. Nous pouvons ensuite parler de composition et d’entretien sur la base d’un modèle mieux défini.",
+          "paragraph2": "Un poncho pour le bain et un poncho pour la plage ne répondent pas forcément au même brief. Présentez-nous votre collection et les pièces à coordonner. Les exigences d’étiquetage ou d’essais du marché de destination doivent concerner le modèle réel ; nous ne les présumons pas à partir d’une image de catégorie.",
+          "metaTitle": "Fabricant de ponchos bébé en Turquie | TVS Textile",
+          "metaDescription": "Ponchos bébé : fabrication dans notre propre usine à Denizli. Échangeons sur les caractéristiques, quantités et besoins de votre achat professionnel.",
+          "question": "Que préciser pour un poncho bébé ?",
+          "answer": "Nous demandons la gamme de tailles et les mesures finies, plutôt qu’un âge seul. Joignez une référence de capuche, la composition souhaitée et l’entretien. Essais, étiquetage et documents requis sur le marché de destination doivent correspondre au modèle final.",
+          "specs": "Taille|Âge prévu et mesures finies du corps\nCapuche|Référence de forme et construction\nGamme|Matière, couleurs et quantités par taille",
+          "imageAlt": "Ponchos bébé"
+        },
+        "de": {
+          "name": "Baby Ponchos",
+          "lead": "Wir beginnen einen Baby-Poncho mit Größe und Verwendung, bevor wir über Muster sprechen.",
+          "heading": "Wir möchten Form und Abdeckung festhalten",
+          "paragraph1": "Die Altersgruppe hilft beim Verständnis, ersetzt aber keine Fertigmaße. Beschreiben Sie uns Kapuze, Öffnung und gewünschte Abdeckung. Auf dieser Grundlage möchten wir Material und Pflegehinweise besprechen.",
+          "paragraph2": "Ein Badeponcho und ein Strandponcho können unterschiedliche Anforderungen haben. Erzählen Sie uns von Ihrer Kollektion und den dazugehörigen Produkten. Kennzeichnungs- und Prüfanforderungen des Zielmarktes müssen am tatsächlichen Modell betrachtet werden; ein Kategoriefoto ist für uns kein Nachweis der Konformität.",
+          "metaTitle": "Baby Ponchos Hersteller Türkei | TVS Textile",
+          "metaDescription": "Baby Ponchos aus unserer eigenen Fabrik in Denizli. Besprechen Sie Spezifikationen, Mengen und Ihren Textileinkauf mit TVS Textile.",
+          "question": "Welche Angaben brauchen wir für einen Baby-Poncho?",
+          "answer": "Wir fragen nach Größenbereich und fertigen Maßen, nicht allein nach einem Alter. Ergänzen Sie Kapuzenvorlage, Materialwunsch und Pflegebrief. Prüfungen, Kennzeichnung und Unterlagen für den Zielmarkt müssen zum endgültigen Poncho passen.",
+          "specs": "Größe|Vorgesehenes Alter und fertige Körpermaße\nKapuze|Form- und Konstruktionsvorlage\nSortiment|Material, Farben und Größenmengen",
+          "imageAlt": "Baby Ponchos"
+        },
+        "es": {
+          "name": "Ponchos para bebé",
+          "lead": "Empezamos un poncho para bebé por las medidas y el uso, antes de comentar los estampados.",
+          "heading": "Queremos definir forma y cobertura",
+          "paragraph1": "La edad prevista ayuda, pero también pedimos dimensiones finales. Describa capucha, abertura y cobertura. Con esos elementos podremos conversar sobre material y cuidados con una ficha más concreta.",
+          "paragraph2": "Un poncho de baño y otro de playa pueden plantear necesidades diferentes. Cuéntenos su colección y los productos que quiere coordinar. Los requisitos de etiquetado o ensayos del mercado de destino deben revisarse para el modelo real; no consideramos una imagen de categoría como prueba de conformidad.",
+          "metaTitle": "Fabricante de ponchos para bebé en Turquía | TVS Textile",
+          "metaDescription": "Ponchos para bebé de nuestra propia fábrica en Denizli. Consulte especificaciones, cantidades y los requisitos de su compra profesional con TVS Textile.",
+          "question": "¿Qué debemos comentar sobre un poncho para bebé?",
+          "answer": "Solicitamos tallas y medidas finales, además de la edad prevista. Incluya capucha, composición requerida y cuidados. Ensayos, etiquetas y documentación del mercado de destino deben corresponder al modelo final del poncho.",
+          "specs": "Talla|Edad prevista y medidas finales del cuerpo\nCapucha|Referencia de forma y construcción\nGama|Material, colores y cantidades por talla",
+          "imageAlt": "Ponchos para bebé"
+        }
+      }
+    },
+    {
+      "slug": "baby-swaddles",
+      "group": 2,
+      "active": true,
+      "image": "/img/products/baby-swaddles.webp",
+      "realPhoto": false,
+      "updated": "2026-10-06",
+      "locales": {
+        "en": {
+          "name": "Baby swaddles",
+          "lead": "We see a baby swaddle brief as a conversation about fabric, dimensions and the product’s intended use.",
+          "heading": "We ask you to describe the purpose clearly",
+          "paragraph1": "The word swaddle can cover different textile formats. We therefore want to agree what the product is intended to be, along with the finished dimensions and composition. Colour and print references are helpful once that foundation is clear. If several sizes are planned, list them separately with their quantities.",
+          "paragraph2": "We also want to discuss the instructions and labelling required for your market. We do not make sleep-safety claims from a fabric description. The final use, care information and any applicable requirements need to be considered alongside the actual product specification before an order is agreed.",
+          "metaTitle": "Baby swaddles Manufacturer in Turkey | TVS Textile",
+          "metaDescription": "Baby swaddles from our own Denizli factory. Discuss product specifications, quantities and your wholesale sourcing brief with TVS Textile.",
+          "question": "How do we distinguish a blanket enquiry from a shaped swaddle?",
+          "answer": "Please describe the format explicitly. A square textile and a shaped wrap with fastening need different written briefs. Send a reference, the finished dimensions and intended use. Instructions and any safety or testing requirements need to be agreed for the final product and destination, not assumed from its name.",
+          "specs": "Shape|Blanket or shaped-wrap format and dimensions\nMaterial|Composition and construction reference\nInstructions|Intended use, labels and care requirements",
+          "imageAlt": "Baby swaddles"
+        },
+        "fr": {
+          "name": "Langes bébé",
+          "lead": "Nous souhaitons préciser l’usage d’un lange bébé avant d’en discuter les couleurs.",
+          "heading": "Nous évitons qu’un nom remplace le cahier des charges",
+          "paragraph1": "Le terme lange peut désigner différents formats textiles. Nous vous proposons de décrire le produit attendu, ses dimensions finies et sa composition. Les motifs et références de couleur viennent compléter cette base. Si plusieurs formats sont prévus, indiquez chacun avec sa quantité.",
+          "paragraph2": "Nous souhaitons aussi parler des instructions et de l’étiquetage pour votre marché. Une description de tissu ne nous permet pas d’affirmer une sécurité particulière pour le sommeil. L’usage final, l’entretien et les exigences applicables doivent être examinés avec les spécifications du produit avant toute commande.",
+          "metaTitle": "Fabricant de langes bébé en Turquie | TVS Textile",
+          "metaDescription": "Langes bébé : fabrication dans notre propre usine à Denizli. Échangeons sur les caractéristiques, quantités et besoins de votre achat professionnel.",
+          "question": "Comment distinguer un carré textile d’un lange façonné ?",
+          "answer": "Décrivez explicitement le format. Un carré et un modèle façonné avec fermeture appellent des cahiers des charges différents. Envoyez référence, dimensions et usage prévu. Les instructions et exigences d’essais ou de sécurité concernent le produit final et sa destination.",
+          "specs": "Format|Carré textile ou lange façonné et dimensions\nMatière|Composition et référence de construction\nInstructions|Usage, étiquettes et entretien",
+          "imageAlt": "Langes bébé"
+        },
+        "de": {
+          "name": "Baby Pucktücher",
+          "lead": "Wir möchten bei Baby-Pucktüchern zuerst die beabsichtigte Verwendung klären.",
+          "heading": "Wir lassen den Produktnamen nicht den Brief ersetzen",
+          "paragraph1": "Unter ähnlichen Bezeichnungen können unterschiedliche textile Formate angeboten werden. Deshalb möchten wir Produktzweck, Fertigmaße und Zusammensetzung ausdrücklich besprechen. Druck- und Farbwünsche ergänzen diese Angaben. Geplante Größen nennen Sie bitte jeweils mit ihrer Menge.",
+          "paragraph2": "Auch Hinweise zur Verwendung und Kennzeichnung für Ihren Markt gehören in das Gespräch. Aus einer Stoffbeschreibung ergeben sich für uns keine Aussagen zur Schlafsicherheit. Verwendung, Pflege und geltende Anforderungen müssen zusammen mit der finalen Produktspezifikation geklärt werden.",
+          "metaTitle": "Baby Pucktücher Hersteller Türkei | TVS Textile",
+          "metaDescription": "Baby Pucktücher aus unserer eigenen Fabrik in Denizli. Besprechen Sie Spezifikationen, Mengen und Ihren Textileinkauf mit TVS Textile.",
+          "question": "Wie unterscheiden Sie ein Tuch von einem geformten Puckprodukt?",
+          "answer": "Beschreiben Sie die Form ausdrücklich. Ein quadratisches Textil und ein Modell mit Verschluss brauchen unterschiedliche Spezifikationen. Senden Sie Vorlage, Maße und vorgesehenen Gebrauch. Hinweise und Prüfanforderungen müssen sich auf das Endprodukt und seinen Zielmarkt beziehen.",
+          "specs": "Form|Quadratisches Tuch oder geformter Wickel und Maße\nMaterial|Zusammensetzung und Aufbau\nHinweise|Nutzung, Kennzeichnung und Pflege",
+          "imageAlt": "Baby Pucktücher"
+        },
+        "es": {
+          "name": "Muselinas para bebé",
+          "lead": "Queremos aclarar el uso de una muselina para bebé antes de hablar de su color.",
+          "heading": "El nombre del producto no sustituye la ficha",
+          "paragraph1": "Una misma denominación puede incluir formatos textiles distintos. Por eso proponemos describir finalidad, medidas y composición. Los estampados y colores completan esa base. Si prevé varios tamaños, indique cada uno con su cantidad.",
+          "paragraph2": "También queremos comentar instrucciones y etiquetado para su mercado. Una descripción del tejido no permite afirmar una seguridad particular para el sueño. Uso final, cuidados y requisitos aplicables deben considerarse junto con las especificaciones antes de acordar un pedido.",
+          "metaTitle": "Fabricante de muselinas para bebé en Turquía | TVS Textile",
+          "metaDescription": "Muselinas para bebé de nuestra propia fábrica en Denizli. Consulte especificaciones, cantidades y los requisitos de su compra profesional con TVS Textile.",
+          "question": "¿Cómo distinguir una muselina cuadrada de una envoltura con forma?",
+          "answer": "Describa el formato explícitamente. Un cuadrado y un modelo con cierre requieren fichas distintas. Comparta referencia, medidas y uso previsto. Instrucciones y requisitos de ensayo o seguridad se acuerdan para el producto final y su destino.",
+          "specs": "Formato|Cuadrado textil o envoltura con forma y medidas\nMaterial|Composición y construcción\nInstrucciones|Uso, etiquetas y cuidados",
+          "imageAlt": "Muselinas para bebé"
+        }
+      }
+    },
+    {
+      "slug": "baby-sleeping-bags",
+      "group": 2,
+      "active": true,
+      "image": "/img/products/baby-sleeping-bags.webp",
+      "realPhoto": false,
+      "updated": "2026-10-06",
+      "locales": {
+        "en": {
+          "name": "Baby sleeping bags",
+          "lead": "We do not treat a baby sleeping bag as an ordinary bedding accessory.",
+          "heading": "We put the final specification first",
+          "paragraph1": "When you enquire about a baby sleeping bag, we ask for the intended age and size range, the season of use and your preferred fastening arrangement. We want to understand the construction you are considering rather than choose a thermal rating from a product photograph.",
+          "paragraph2": "Thermal performance, fit, labelling and applicable safety testing need to be verified for the final design and destination market. We do not publish an assumed TOG value or certification. Your enquiry should identify the requirements you need to meet so that the conversation can focus on documented specifications and the next steps for that product.",
+          "metaTitle": "Baby sleeping bags Manufacturer in Turkey | TVS Textile",
+          "metaDescription": "Baby sleeping bags from our own Denizli factory. Discuss product specifications, quantities and your wholesale sourcing brief with TVS Textile.",
+          "question": "Can we assume a thermal rating from the sleeping-bag image?",
+          "answer": "No. Our concept image does not establish a thermal rating, fabric composition or safety-test result. If your range requires a particular rating, include it in the brief together with the intended sizing and fastening. The evidence and applicable requirements must be confirmed for the finished sleeping bag.",
+          "specs": "Size|Intended age range and finished measurements\nClosure|Zip, shoulder and opening requirements\nVerification|Seasonal brief, thermal-rating evidence and market requirements",
+          "imageAlt": "Baby sleeping bags"
+        },
+        "fr": {
+          "name": "Gigoteuses bébé",
+          "lead": "Nous ne traitons pas une gigoteuse bébé comme un simple accessoire de literie.",
+          "heading": "Nous plaçons le modèle final au centre de l’échange",
+          "paragraph1": "Pour une gigoteuse, nous vous demandons l’âge et les tailles visés, la saison et les fermetures souhaitées. Nous voulons comprendre la construction envisagée plutôt qu’attribuer un indice thermique à partir d’une photographie.",
+          "paragraph2": "La performance thermique, l’ajustement, l’étiquetage et les essais de sécurité doivent être vérifiés pour le modèle final et le marché de destination. Nous ne publions pas de valeur TOG ou de certification supposée. Indiquez les exigences à satisfaire afin que notre discussion porte sur des spécifications documentées et les étapes à envisager.",
+          "metaTitle": "Fabricant de gigoteuses bébé en Turquie | TVS Textile",
+          "metaDescription": "Gigoteuses bébé : fabrication dans notre propre usine à Denizli. Échangeons sur les caractéristiques, quantités et besoins de votre achat professionnel.",
+          "question": "Une photographie confirme-t-elle le niveau thermique d’une gigoteuse ?",
+          "answer": "Non. Notre visuel conceptuel ne prouve ni niveau thermique, ni composition, ni résultat d’essai. Si votre gamme exige une valeur particulière, indiquez-la avec les tailles et fermetures. Les justificatifs doivent être confirmés pour la gigoteuse effectivement produite.",
+          "specs": "Taille|Âge prévu et dimensions finies\nOuverture|Zip, épaules et fermeture\nVérification|Saison, preuve du niveau thermique et exigences du marché",
+          "imageAlt": "Gigoteuses bébé"
+        },
+        "de": {
+          "name": "Baby Schlafsäcke",
+          "lead": "Wir behandeln einen Baby-Schlafsack nicht wie gewöhnliches Bettzubehör.",
+          "heading": "Wir stellen das endgültige Modell in den Mittelpunkt",
+          "paragraph1": "Für einen Baby-Schlafsack möchten wir Alters- und Größenbereich, Saison und Verschlüsse kennen. Uns geht es um den vorgesehenen Aufbau, nicht darum, einem Foto einen Wärmewert zuzuordnen.",
+          "paragraph2": "Wärmeleistung, Passform, Kennzeichnung und Sicherheitsprüfungen müssen für Endprodukt und Zielmarkt verifiziert werden. Wir veröffentlichen keinen angenommenen TOG-Wert und kein unbelegtes Zertifikat. Beschreiben Sie die Anforderungen, die Ihr Projekt erfüllen muss, damit wir über dokumentierte Spezifikationen und die nächsten Schritte sprechen können.",
+          "metaTitle": "Baby Schlafsäcke Hersteller Türkei | TVS Textile",
+          "metaDescription": "Baby Schlafsäcke aus unserer eigenen Fabrik in Denizli. Besprechen Sie Spezifikationen, Mengen und Ihren Textileinkauf mit TVS Textile.",
+          "question": "Belegt das Schlafsackfoto einen bestimmten Wärmewert?",
+          "answer": "Nein. Unser Konzeptbild bestätigt weder Wärmewert noch Zusammensetzung oder Prüfergebnis. Wenn Sie einen bestimmten Wert benötigen, nennen Sie ihn zusammen mit Größen und Verschlüssen. Nachweise und geltende Anforderungen sind für den fertigen Schlafsack zu bestätigen.",
+          "specs": "Größe|Vorgesehenes Alter und fertige Maße\nÖffnung|Reißverschluss, Schultern und Verschluss\nNachweis|Saison, Wärmewertnachweis und Marktanforderungen",
+          "imageAlt": "Baby Schlafsäcke"
+        },
+        "es": {
+          "name": "Sacos de dormir para bebé",
+          "lead": "No tratamos un saco de dormir para bebé como un accesorio corriente de cama.",
+          "heading": "Ponemos el modelo final en el centro de la conversación",
+          "paragraph1": "Para un saco de dormir pedimos edades, tallas, temporada y cierres. Queremos entender la construcción prevista en vez de atribuir un valor térmico a partir de una fotografía.",
+          "paragraph2": "Rendimiento térmico, ajuste, etiquetado y ensayos de seguridad deben verificarse para el producto final y el mercado de destino. No publicamos un valor TOG ni una certificación supuestos. Indique los requisitos que debe cumplir su proyecto para conversar sobre especificaciones documentadas y próximos pasos.",
+          "metaTitle": "Fabricante de sacos de dormir para bebé en Turquía | TVS Textile",
+          "metaDescription": "Sacos de dormir para bebé de nuestra propia fábrica en Denizli. Consulte especificaciones, cantidades y los requisitos de su compra profesional con TVS Textile.",
+          "question": "¿La imagen del saco confirma un valor térmico?",
+          "answer": "No. El concepto visual no acredita valor térmico, composición ni resultados de ensayo. Si necesita un valor concreto, indíquelo junto con tallas y cierres. Las pruebas y requisitos aplicables se confirman para el saco de dormir terminado.",
+          "specs": "Talla|Edad prevista y medidas finales\nApertura|Cremallera, hombros y cierre\nVerificación|Temporada, prueba de valor térmico y requisitos del mercado",
+          "imageAlt": "Sacos de dormir para bebé"
+        }
+      }
+    },
+    {
+      "slug": "baby-comforters",
+      "group": 2,
+      "active": true,
+      "image": "/img/products/baby-comforters.webp",
+      "realPhoto": false,
+      "updated": "2026-10-06",
+      "locales": {
+        "en": {
+          "name": "Baby comforters",
+          "lead": "We approach a baby comforter through its textile details and the final design.",
+          "heading": "We ask about more than appearance",
+          "paragraph1": "For a comforter or doudou, we want to understand the dimensions, fabric and any attached features. A reference image can show the visual direction, but it does not replace a description of seams, attachments or the intended age. We ask you to bring those details into the enquiry from the outset.",
+          "paragraph2": "The destination market and labelling requirements are also relevant. Any applicable safety assessment should concern the actual finished design, not a general category name. We can discuss colour and collection coordination while keeping those product requirements visible; the quantities should distinguish each variant you intend to order.",
+          "metaTitle": "Baby comforters Manufacturer in Turkey | TVS Textile",
+          "metaDescription": "Baby comforters from our own Denizli factory. Discuss product specifications, quantities and your wholesale sourcing brief with TVS Textile.",
+          "question": "What should we review for a baby comforter design?",
+          "answer": "Send us the cloth shape and a reference for any attached element. We want to discuss material, dimensions and attachment details together. The intended age and destination-market requirements must be reviewed for the actual design; the illustrative bunny photograph is not evidence of an approved product.",
+          "specs": "Design|Cloth dimensions and attached-element reference\nConstruction|Material and attachment details\nVerification|Intended age, labels and relevant safety requirements",
+          "imageAlt": "Baby comforters"
+        },
+        "fr": {
+          "name": "Doudou",
+          "lead": "Nous abordons le doudou par ses détails textiles et la conception de la pièce finie.",
+          "heading": "Nous regardons au-delà de l’apparence",
+          "paragraph1": "Nous souhaitons connaître les dimensions, le tissu et les éléments ajoutés au doudou. Une image montre une direction esthétique, mais elle ne remplace pas la description des coutures, fixations ou de l’âge prévu. Nous vous invitons à inclure ces informations dès votre première demande.",
+          "paragraph2": "Le marché de destination et l’étiquetage comptent également. Les évaluations de sécurité applicables doivent concerner le modèle réel, et non un nom de catégorie. Nous pouvons discuter des couleurs tout en conservant ces exigences dans le brief ; les quantités doivent distinguer les variantes que vous envisagez.",
+          "metaTitle": "Fabricant de doudou en Turquie | TVS Textile",
+          "metaDescription": "Doudou : fabrication dans notre propre usine à Denizli. Échangeons sur les caractéristiques, quantités et besoins de votre achat professionnel.",
+          "question": "Que devons-nous examiner pour un doudou ?",
+          "answer": "Présentez la forme du tissu et les éventuels éléments attachés. Nous voulons discuter ensemble matière, dimensions et assemblage. L’âge et les exigences du marché s’examinent pour le modèle réel ; le lapin illustratif ne constitue pas la preuve d’un produit approuvé.",
+          "specs": "Modèle|Dimensions du tissu et référence des éléments attachés\nConstruction|Matière et assemblage\nVérification|Âge prévu, étiquettes et exigences de sécurité",
+          "imageAlt": "Doudou"
+        },
+        "de": {
+          "name": "Baby Schmusetücher",
+          "lead": "Wir besprechen ein Baby-Schmusetuch über seine textilen Details und den fertigen Entwurf.",
+          "heading": "Wir fragen nach mehr als dem Aussehen",
+          "paragraph1": "Maße, Gewebe und angebrachte Elemente möchten wir in der Anfrage erkennen können. Ein Referenzbild zeigt eine Gestaltungsidee, ersetzt aber keine Beschreibung von Nähten, Befestigungen oder vorgesehenem Alter. Diese Angaben gehören für uns an den Anfang des Gesprächs.",
+          "paragraph2": "Auch Zielmarkt und Kennzeichnung sind wichtig. Geltende Sicherheitsbewertungen müssen sich auf den tatsächlichen Entwurf beziehen, nicht auf einen allgemeinen Kategorienamen. Farben können wir parallel besprechen; die Mengen sollten die einzelnen geplanten Varianten unterscheiden.",
+          "metaTitle": "Baby Schmusetücher Hersteller Türkei | TVS Textile",
+          "metaDescription": "Baby Schmusetücher aus unserer eigenen Fabrik in Denizli. Besprechen Sie Spezifikationen, Mengen und Ihren Textileinkauf mit TVS Textile.",
+          "question": "Was prüfen wir bei einem Baby-Schmusetuch-Entwurf?",
+          "answer": "Senden Sie Tuchform und Vorlagen möglicher befestigter Elemente. Wir möchten Material, Maße und Verbindungen gemeinsam besprechen. Alter und Marktanforderungen werden für den tatsächlichen Entwurf geprüft; das illustrative Hasenbild belegt keine Produktfreigabe.",
+          "specs": "Entwurf|Tuchmaße und Vorlage befestigter Elemente\nAufbau|Material und Befestigungsdetails\nNachweis|Alter, Kennzeichnung und Sicherheitsanforderungen",
+          "imageAlt": "Baby Schmusetücher"
+        },
+        "es": {
+          "name": "Dou dou para bebé",
+          "lead": "Abordamos un dou dou a partir de sus detalles textiles y del diseño terminado.",
+          "heading": "Queremos conocer algo más que su apariencia",
+          "paragraph1": "Nos interesa conocer dimensiones, tejido y elementos añadidos. Una referencia visual muestra el estilo, pero no sustituye una descripción de costuras, uniones o edad prevista. Le invitamos a incluir esos detalles desde la primera consulta.",
+          "paragraph2": "El mercado de destino y el etiquetado también cuentan. Las evaluaciones de seguridad aplicables deben corresponder al diseño real, no a un nombre de categoría. Podemos hablar de colores manteniendo esas exigencias en la ficha; las cantidades deben distinguir cada variante que piensa pedir.",
+          "metaTitle": "Fabricante de dou dou para bebé en Turquía | TVS Textile",
+          "metaDescription": "Dou dou para bebé de nuestra propia fábrica en Denizli. Consulte especificaciones, cantidades y los requisitos de su compra profesional con TVS Textile.",
+          "question": "¿Qué revisar para un dou dou de bebé?",
+          "answer": "Envíenos la forma del paño y las referencias de elementos unidos. Queremos tratar material, medidas y uniones conjuntamente. Edad y requisitos del mercado se revisan para el diseño real; el conejo ilustrativo no demuestra la aprobación de un producto.",
+          "specs": "Diseño|Medidas del paño y referencia de elementos unidos\nConstrucción|Material y detalles de unión\nVerificación|Edad, etiquetas y requisitos de seguridad",
+          "imageAlt": "Dou dou para bebé"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+name: Publish TVS CMS
+on:
+  repository_dispatch:
+    types: [cms-publish]
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: tvs-cms-publish
+  cancel-in-progress: false
+jobs:
+  build:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    env:
+      CMS_SUPABASE_URL: ${{ secrets.CMS_SUPABASE_URL }}
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          ref: main
+      - name: Fetch validated published content
+        env:
+          CMS_SUPABASE_URL: ${{ secrets.CMS_SUPABASE_URL }}
+          CMS_SUPABASE_ANON_KEY: ${{ secrets.CMS_SUPABASE_ANON_KEY }}
+        run: python3 tools/fetch_cms.py
+      - name: Generate multilingual pages and sitemap
+        run: python3 tools/build_corporate.py
+      - name: Verify generated pages
+        run: |
+          python3 tools/check_corporate.py
+          python3 tools/check_multilingual_seo.py
+          python3 tools/check_cms_output.py
+          git diff --check
+      - name: Commit checked public site
+        run: |
+          git config user.name "TVS CMS"
+          git config user.email "87907444+Rwin74@users.noreply.github.com"
+          git add data/cms-published.json sitemap.xml '*.html' collections fr de es kategori
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "Publish validated TVS CMS content"
+          git push origin HEAD:main

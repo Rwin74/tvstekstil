@@ -41,6 +41,10 @@ for p in pages:
   if u.scheme or u.netloc:continue
   path=unquote(u.path)
   if not path:continue
+  if path.startswith('/cms-media/'):
+   import re
+   if not re.fullmatch(r'/cms-media/[a-f0-9-]{36}\.webp',path):errors.append(f'{label}: invalid CMS image {ref}')
+   continue # Runtime proxy; storage availability is checked by check_cms_output.py.
   dest=target(path) if path.startswith('/') else p.parent/path
   if dest.is_dir():dest=dest/'index.html'
   if not dest.exists():errors.append(f'{label}: broken link {ref}')

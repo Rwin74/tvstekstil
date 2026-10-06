@@ -1,6 +1,7 @@
 from pathlib import Path
 from html import escape as esc
 import json, shutil
+import cms_content
 from multilingual_seo import enrich, write_sitemap, COPY
 from editorial_content import CORE, FACTS, PRODUCTS as EDITORIAL_PRODUCTS, apply_voice, UPDATED, FOUNDED, DATES
 from connection_band import connection_band
@@ -92,6 +93,8 @@ def image(group,base='',eager=False):
  attr='fetchpriority="high"' if eager else 'loading="lazy"'
  return f'<img src="{base}img/{IMAGES[group]}" alt="{["Bedroom textile collection","Hospitality and spa collection","Baby textile collection"][group]}" width="1600" height="1067" {attr} decoding="async">'
 def product_image(slug,lang,base='',eager=False):
+ custom=cms_content.image_markup(slug,lang,base,eager)
+ if custom:return custom
  name=next(it[LABEL_INDEX[lang]] for it in ITEMS if it[0]==slug)
  qualifier={'en':'illustrative product visual','fr':'visuel illustratif du produit','de':'illustrative Produktdarstellung','es':'imagen ilustrativa del producto'}[lang]
  attr='fetchpriority="high"' if eager else 'loading="lazy"'
@@ -122,8 +125,10 @@ def page(lang,slug,title,description,body,noindex=False):
  if slug!='index': schema['@graph'].append({'@type':'BreadcrumbList','itemListElement':[{'@type':'ListItem','position':1,'name':t['home'],'item':DOMAIN+'/'+route(lang)},{'@type':'ListItem','position':2,'name':title.split(' | ')[0],'item':canonical}]})
  title,description,body=enrich(lang,slug,title,description,body,base,t,ITEMS,GROUP_SLUGS,LABEL_INDEX,local,DOMAIN,route,schema,noindex,DETAILS)
  title,description,body=enrich_product(lang,slug,title,description,body,ITEMS,LABEL_INDEX,base,local)
+ title,description,body=cms_content.apply_page(lang,slug,title,description,body,t['note'])
  product_updated=slug.startswith('collections/') and slug.split('/')[-1] in [it[0] for it in ITEMS]
- page_updated=SEO_UPDATED if product_updated else UPDATED
+ cms_product=cms_content.product(slug.split('/')[-1]) if product_updated else None
+ page_updated=cms_product['updated'] if cms_product else SEO_UPDATED if product_updated else UPDATED
  for node in schema['@graph']:
   if node['@type']=='Organization':
    node['foundingDate']=FOUNDED
@@ -133,7 +138,8 @@ def page(lang,slug,title,description,body,noindex=False):
    node['dateModified']=page_updated
    node['author']={'@id':DOMAIN+'/#organization'}
  if not noindex:
-  dateline=f'<div class="content-meta"><span>{esc(CORE[lang]["by"])}</span><time datetime="{page_updated}">{SEO_DATES[lang] if product_updated else DATES[lang]}</time></div>'
+  visible_date=page_updated if cms_product else SEO_DATES[lang] if product_updated else DATES[lang]
+  dateline=f'<div class="content-meta"><span>{esc(CORE[lang]["by"])}</span><time datetime="{page_updated}">{visible_date}</time></div>'
   body=body.replace('</section>','</section>'+dateline,1) if slug=='index' else body.replace('</nav>','</nav>'+dateline,1)
  nav=''.join(f'<a href="{base}{local(lang,s)}">{label}</a>' for s,label in zip(['products','about','sourcing-guide','contact'],t['nav']))
  body=enhance(lang,slug,body,base,ITEMS,LABEL_INDEX,local,cards)
@@ -145,6 +151,8 @@ def page(lang,slug,title,description,body,noindex=False):
  locales=f'<meta property="og:locale" content="{COPY[lang]["locale"]}">'+''.join(f'<meta property="og:locale:alternate" content="{COPY[code]["locale"]}">' for code in L if code!=lang) if multilingual else ''
  html=html.replace('<meta property="og:type"',locales+'<meta property="og:type"',1)
  html=html.replace('</head>',f'<script src="{base}js/buyer-experience.js" defer></script></head>',1)
+ if slug=='contact':html=html.replace('</head>',f'<script src="{base}js/enquiry-verification.js" defer></script></head>',1)
+ html=cms_content.apply_html(html,lang,slug)
  write(file,html.replace('><','>\n<'))
 
 def cta(lang,base):
@@ -209,4 +217,5 @@ def build_legacy():
  for old,new in mapping.items():
   write('kategori/'+old+'.html',f'<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="robots" content="noindex,follow"><meta http-equiv="refresh" content="0;url=../collections/{new}.html"><link rel="canonical" href="{DOMAIN}/collections/{new}.html"><title>Collection moved | TVS Textile</title></head><body><a href="../collections/{new}.html">Explore the collection</a></body></html>')
 
+cms_content.configure(globals())
 if __name__=='__main__': build()
