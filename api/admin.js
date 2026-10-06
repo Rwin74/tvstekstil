@@ -20,7 +20,17 @@ async function rate(req,purpose,limit){
  const allowed=await remote('/rest/v1/rpc/cms_rate_limit',{service:true,method:'POST',body:{bucket:purpose+':'+key,max_attempts:limit,window_seconds:900}});S.ensure(allowed===true,429,'Çok fazla deneme. 15 dakika sonra tekrar deneyin.');
 }
 function setCookie(res,value,seconds){res.setHeader('Set-Cookie',`${S.COOKIE}=${value}; Path=/; Secure; HttpOnly; SameSite=Strict; Max-Age=${seconds}`);}
-async function dispatch(){S.ensure(env.ADMIN_GITHUB_PUBLISH_TOKEN,503,'Yayın bağlantısı henüz kurulmadı.');const r=await fetch('https://api.github.com/repos/Rwin74/tvstekstil/dispatches',{method:'POST',headers:{Authorization:'Bearer '+env.ADMIN_GITHUB_PUBLISH_TOKEN,Accept:'application/vnd.github+json','X-GitHub-Api-Version':'2022-11-28','Content-Type':'application/json'},body:JSON.stringify({event_type:'cms-publish'}),signal:AbortSignal.timeout(12000)});S.ensure(r.ok,502,'İçerik kaydedildi; yayın kuyruğu başlatılamadı. Yayını tekrar dene.');}
+async function dispatch(){
+ S.ensure(env.ADMIN_GITHUB_PUBLISH_TOKEN,503,'Yayın bağlantısı henüz kurulmadı.');
+ const url='https://api.github.com/repos/Rwin74/tvstekstil/contents/data/cms-revision.json';
+ const headers={Authorization:'Bearer '+env.ADMIN_GITHUB_PUBLISH_TOKEN,Accept:'application/vnd.github+json','X-GitHub-Api-Version':'2022-11-28','Content-Type':'application/json'};
+ const previous=await fetch(url+'?ref=main',{headers,signal:AbortSignal.timeout(12000)});
+ S.ensure(previous.ok||previous.status===404,502,'İçerik kaydedildi; yayın bağlantısı doğrulanamadı.');
+ const existing=previous.ok?await previous.json():null;
+ const marker={requestedAt:new Date().toISOString(),requestId:crypto.randomUUID()};
+ const r=await fetch(url,{method:'PUT',headers,body:JSON.stringify({message:'Publish validated TVS CMS content',branch:'main',content:Buffer.from(JSON.stringify(marker)+'\n').toString('base64'),...(existing?{sha:existing.sha}:{})}),signal:AbortSignal.timeout(12000)});
+ S.ensure(r.ok,502,'İçerik kaydedildi; yayın kuyruğu başlatılamadı. Yeniden yükleyip yayını tekrar dene.');
+}
 module.exports=async function(req,res){
  res.setHeader('Cache-Control','no-store');res.setHeader('X-Content-Type-Options','nosniff');res.setHeader('X-Robots-Tag','noindex, nofollow');res.setHeader('Referrer-Policy','no-referrer');
  try{

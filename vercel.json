@@ -1,4 +1,7 @@
 {
+  "framework": null,
+  "buildCommand": "node tools/build_vercel.cjs",
+  "outputDirectory": "_site",
   "headers": [
     {
       "source": "/(.*)",

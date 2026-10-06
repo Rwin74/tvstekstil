@@ -1,6 +1,6 @@
 # TVS yönetim paneli — kurulum ve durum
 
-6 Ekim 2026 kurulum kaydı: Supabase şeması uygulandı; anonim ve yönetici olmayan erişimi reddeden gerçek veritabanı kontrolleri geçti. atakan7495@gmail.com hesabı UUID üzerinden yönetici olarak yetkilendirildi. Herkese açık kayıt kapatıldı, minimum parola uzunluğu 12 ve güvenli parola değişimi etkinleştirildi. Vercel Production ortamına Supabase bağlantısı ve oturum şifreleme anahtarı eklendi. Önceki secret anahtarı iptal edildi. Gerçek yönetici girişi, yayın token/Actions bağlantısı ve mail/Turnstile teslim testi henüz tamamlanmadı; tam çalışır kabulü yapılmadı.
+6 Ekim 2026 kurulum kaydı: Supabase şeması uygulandı; anonim ve yönetici olmayan erişimi reddeden gerçek veritabanı kontrolleri geçti. atakan7495@gmail.com hesabı UUID üzerinden yönetici olarak yetkilendirildi. Herkese açık kayıt kapatıldı, minimum parola uzunluğu 12 ve güvenli parola değişimi etkinleştirildi. Vercel Production ortamına Supabase bağlantısı ve oturum şifreleme anahtarı eklendi. Önceki secret anahtarı iptal edildi. Kullanıcı gerçek yönetici girişini doğruladı. Yönetici RLS kayıt testi geçti. Yayın tokenı Production ortamına bağlandı. Mail/Turnstile kurulumu kullanıcının isteğiyle ertelendi; mail teslim testi yapılmadı.
 
 Panel adresi `/admin/`. Yerel önizleme: `npm run admin:preview`, ardından http://127.0.0.1:8787/admin/.
 
@@ -27,16 +27,15 @@ Production ortamını kullanın. Yönetim paneli sabit `https://www.tvstextile.c
 
 ## 3. Yayınlama
 
-GitHub repo > Settings > Secrets and variables > Actions:
-`CMS_SUPABASE_URL` ve `CMS_SUPABASE_ANON_KEY` ekleyin. Service-role key'i GitHub'a eklemeyin.
-`.github/workflows/publish-cms.yml` main dalına gitmelidir. Vercel main otomatik dağıtımı açık olmalıdır.
+GitHub Actions hesapta kapalı olduğu için yayınlar Actions kullanmaz. Vercel Production ortamındaki ADMIN_GITHUB_PUBLISH_TOKEN yalnızca Rwin74/tvstekstil deposunda Contents read/write yetkisi taşır. Oluşturulan token 5 Kasım 2026 tarihinde sona erer; bu tarihten önce yenilenip Vercel ortamına bağlanmalıdır.
 
-Taslağı kaydet veritabanındaki sürümü artırır ve eski sürümle yazmayı reddeder. Yayınla dört dilde aktif ürün alanlarını doğrular, yayınlanan içerik kopyasını oluşturur ve GitHub iş akışını başlatır. İş akışı yalnızca yayınlanan içeriği indirir, HTML ve sitemap üretir, kontrolleri geçirir ve commit gönderir. GitHub token sadece bu sabit depoda yayın işi başlatır; tarayıcıdan dosya yolu veya komut alınmaz.
+Taslağı kaydet veritabanındaki sürümü artırır; eşzamanlı eski sürümle yazmayı reddeder. Yayınla dört dilde aktif ürün alanlarını doğrular, yayınlanan kopyayı kaydeder ve sadece data/cms-revision.json dosyasına bir yayın işareti commit eder. Kişisel müşteri verileri, taslak içerikler veya gizli anahtarlar bu commit'e girmez. GitHub dosyasındaki SHA koşullu güncellenir; yarış durumunda zorla üzerine yazılmaz.
 
-Yayınlama anlık değildir. GitHub Actions ve Vercel dağıtımının başarılı olduğunu kontrol edin. İş akışı başarısızsa mevcut canlı site devam eder; paneldeki taslak/yayın kopyası korunur. API zaman aşımı sonrası yeniden yükleme sürümü yeniler. Dispatch başarısızlığından sonra önce yeniden yükleyin, sonra tekrar yayınlayın. Eşzamanlı Git değişikliği varsa git push zorlanmaz.
+Bu commit Vercel'in normal main dağıtımını başlatır. tools/build_vercel.cjs yalnızca yayınlanmış Supabase projeksiyonunu genel API anahtarıyla indirir, çok dilli sayfaları/sitemap'i üretir ve bağlantı/SEO/çıktı kontrollerini çalıştırır. Production bağlantısı eksikse derleme durur. Doğrulanmış statik dosyalar _site klasörüne alınır; server kaynakları, tools, data, Supabase SQL dosyaları ve gizli ortam değerleri statik siteye kopyalanmaz. api dizinindeki Node fonksiyonları Vercel tarafından ayrı derlenir.
 
-Yeni ürünler üç koleksiyondan birine eklenebilir. URL kısa adı yayımlandıktan sonra sabit tutulmalıdır. Pasife alınan sayfalar kaldırılır; eski URL için gerekiyorsa 301 yönlendirmesi ayrıca ekleyin. Şimdilik üst sınır 200 ürün. Sayfa yönetimi ana sayfa/hakkımızda/rehber/iletişim başlığını, meta açıklamasını ve girişini düzenler; tasarım bloklarının tümünü düzenleyen serbest HTML editörü değildir.
+Yayın anlık değildir. Vercel dağıtımını kontrol edin. Başarısız derlemede mevcut canlı sürüm korunur; veritabanındaki içerik ve taslak korunur. Başarısız yayın isteğinden sonra yeniden yükleyin ve tekrar yayınlayın.
 
+Yeni ürünler üç koleksiyondan birine eklenebilir; üst sınır 200 üründür. Dört dilin alanları aktif ürün için zorunludur. Pasife alınan sayfalar kaldırılır; eski URL gerekiyorsa 301 yönlendirmesi ayrıca planlanmalıdır. Sayfa editörü ana sayfa/hakkımızda/rehber/iletişim başlığını, girişini ve SEO alanlarını düzenler; serbest HTML editörü değildir.
 ## 4. Teklifler: panel + mevcut mail
 
 Önceki `/admin/api/quotes` bağlantısı kontrolde 404 dönüyordu. Bu sürüm aynı form yolunu yeni çift teslimat uç noktasına bağlar. Mail hizmetinin kimliği/SMTP bilgisi bilinmediğinden çalıştığı varsayılmaz.
