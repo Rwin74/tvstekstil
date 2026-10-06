@@ -28,7 +28,7 @@ module.exports=async function(req,res){
  if(action==='status') {S.ensure(req.method==='GET',405,'İstek yöntemi geçersiz.');let configured=true;try{config();}catch{configured=false;}if(!configured||!session)return res.status(200).json({configured,authenticated:false});const user=await admin(session.token);return res.status(200).json({configured,authenticated:true,email:user.email,csrf:session.csrf,expires:session.exp});}
  config();
  if(action==='login'){
- S.ensure(req.method==='POST',405,'İstek yöntemi geçersiz.');S.sameOrigin(req);const data=S.jsonBody(req,2000);await rate(req,'login',5);S.str(data.email,254,true);S.ensure(typeof data.password==='string'&&data.password.length>=12&&data.password.length<=200,400,'Şifre en az 12 karakter olmalı.');
+ S.ensure(req.method==='POST',405,'İstek yöntemi geçersiz.');S.sameOrigin(req);const data=S.jsonBody(req,2000);await rate(req,'login',5);S.str(data.email,254,true);S.ensure(typeof data.password==='string'&&data.password.length>=1&&data.password.length<=200,400,'Şifrenizi girin.');
  const account=crypto.createHmac('sha256',Buffer.from(env.ADMIN_SESSION_KEY,'base64')).update(data.email.trim().toLowerCase()).digest('hex');
  const attempts=await remote('/rest/v1/rpc/cms_rate_limit',{service:true,method:'POST',body:{bucket:'account:'+account,max_attempts:10,window_seconds:900}});S.ensure(attempts===true,429,'Çok fazla deneme. 15 dakika sonra tekrar deneyin.');
  let result;try{result=await remote('/auth/v1/token?grant_type=password',{method:'POST',body:{email:data.email,password:data.password}});await admin(result.access_token);}catch{throw new S.HttpError(401,'E-posta, şifre veya yönetici yetkisi doğrulanamadı.');}
