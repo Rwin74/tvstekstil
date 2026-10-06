@@ -9,6 +9,8 @@ http.createServer(async(req,res)=>{
  else if(action==='content')result={payload,version,published_at:null};
  else if(action==='save'){if(body.version!==version){res.statusCode=409;result={error:'Yerel test: sürüm çakışması.'};}else{require('../lib/admin-security.cjs').validateDocument(body.payload);payload=body.payload;result={version:++version};}}
  else if(action==='enquiries')result=[];
+ else if(action==='publish'){require('../lib/admin-security.cjs').validateDocument(body.payload,true);payload=body.payload;res.statusCode=502;result={error:'Yerel test: yayın bağlantısı geçici olarak başarısız.',version:++version,saved:true,retryPublish:true};}
+ else if(action==='retry-publish')result={ok:true};
  else{res.statusCode=503;result={error:'Bu yalnızca yerel arayüz testidir. Gerçek giriş/yayın/mail bağlı değil.'};}
  return res.end(JSON.stringify(result));}
  const name=url.pathname.endsWith('/')?url.pathname+'index.html':url.pathname;const file=path.resolve(root,'.'+decodeURIComponent(name));if(!file.startsWith(root+path.sep)||!fs.existsSync(file)||!fs.statSync(file).isFile()){res.writeHead(404);return res.end();}

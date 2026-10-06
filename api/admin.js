@@ -50,7 +50,7 @@ module.exports=async function(req,res){
  if(action==='save'||action==='publish'){
  S.ensure(req.method==='POST',405,'İstek yöntemi geçersiz.');const data=S.jsonBody(req);S.ensure(Number.isInteger(data.version)&&data.version>=0,400,'İçerik sürümü geçersiz.');S.validateDocument(data.payload,action==='publish');if(action==='publish')S.ensure(env.ADMIN_GITHUB_PUBLISH_TOKEN,503,'Yayın bağlantısı henüz kurulmadı.');
  const result=await remote('/rest/v1/rpc/cms_save',{token:session.token,method:'POST',body:{content:data.payload,expected_version:data.version,make_public:action==='publish'}});
- if(action==='publish')await dispatch();return res.status(200).json({version:result,published:action==='publish'});}
+ if(action==='publish'){try{await dispatch();}catch(error){return res.status(error.status||502).json({error:error.message,version:result,saved:true,retryPublish:true});}}return res.status(200).json({version:result,published:action==='publish'});}
  if(action==='retry-publish'){S.ensure(req.method==='POST',405,'İstek yöntemi geçersiz.');await dispatch();return res.status(200).json({ok:true});}
  if(action==='image'){
  S.ensure(req.method==='POST',405,'İstek yöntemi geçersiz.');await rate(req,'image',30);const data=S.jsonBody(req,3000000);S.ensure(typeof data.base64==='string'&&/^[A-Za-z0-9+/]+={0,2}$/.test(data.base64),400,'Görsel dosyası geçersiz.');const input=Buffer.from(data.base64,'base64');S.ensure(input.length<=2100000,413,'Görsel en fazla 2 MB olabilir.');
