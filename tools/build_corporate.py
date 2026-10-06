@@ -6,6 +6,7 @@ from editorial_content import CORE, FACTS, PRODUCTS as EDITORIAL_PRODUCTS, apply
 from connection_band import connection_band
 from buyer_experience import enhance
 from hero_design import refine_hero
+from product_seo import enrich_product, UPDATED as SEO_UPDATED, DATES as SEO_DATES
 
 ROOT = Path(__file__).resolve().parents[1]
 DOMAIN = 'https://www.tvstextile.com'
@@ -120,15 +121,19 @@ def page(lang,slug,title,description,body,noindex=False):
   schema['@graph'].append({'@type':'ItemList','itemListElement':[{'@type':'ListItem','position':i+1,'name':it[LABEL_INDEX[lang]],'url':DOMAIN+'/'+route(lang,'collections/'+it[0])} for i,it in enumerate(subset)]})
  if slug!='index': schema['@graph'].append({'@type':'BreadcrumbList','itemListElement':[{'@type':'ListItem','position':1,'name':t['home'],'item':DOMAIN+'/'+route(lang)},{'@type':'ListItem','position':2,'name':title.split(' | ')[0],'item':canonical}]})
  title,description,body=enrich(lang,slug,title,description,body,base,t,ITEMS,GROUP_SLUGS,LABEL_INDEX,local,DOMAIN,route,schema,noindex,DETAILS)
+ title,description,body=enrich_product(lang,slug,title,description,body,ITEMS,LABEL_INDEX,base,local)
+ product_updated=slug.startswith('collections/') and slug.split('/')[-1] in [it[0] for it in ITEMS]
+ page_updated=SEO_UPDATED if product_updated else UPDATED
  for node in schema['@graph']:
   if node['@type']=='Organization':
    node['foundingDate']=FOUNDED
    node['description']=FACTS[lang]['about']
   if node['@type'] in ['WebPage','CollectionPage']:
-   node['dateModified']=UPDATED
+   node.update(name=title,description=description)
+   node['dateModified']=page_updated
    node['author']={'@id':DOMAIN+'/#organization'}
  if not noindex:
-  dateline=f'<div class="content-meta"><span>{esc(CORE[lang]["by"])}</span><time datetime="{UPDATED}">{DATES[lang]}</time></div>'
+  dateline=f'<div class="content-meta"><span>{esc(CORE[lang]["by"])}</span><time datetime="{page_updated}">{SEO_DATES[lang] if product_updated else DATES[lang]}</time></div>'
   body=body.replace('</section>','</section>'+dateline,1) if slug=='index' else body.replace('</nav>','</nav>'+dateline,1)
  nav=''.join(f'<a href="{base}{local(lang,s)}">{label}</a>' for s,label in zip(['products','about','sourcing-guide','contact'],t['nav']))
  body=enhance(lang,slug,body,base,ITEMS,LABEL_INDEX,local,cards)

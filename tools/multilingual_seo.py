@@ -79,6 +79,7 @@ class SitemapDoc(HTMLParser):
   if tag=='link' and a.get('rel')=='alternate':self.alts.append((a['hreflang'],a['href']))
 
 def write_sitemap(root,paths):
+ import re,json
  ns='http://www.sitemaps.org/schemas/sitemap/0.9';x='http://www.w3.org/1999/xhtml'
  ET.register_namespace('',ns);ET.register_namespace('xhtml',x)
  sitemap=ET.Element('{'+ns+'}urlset')
@@ -86,7 +87,10 @@ def write_sitemap(root,paths):
   doc=SitemapDoc();doc.feed(p.read_text(encoding='utf-8'))
   if doc.noindex or not doc.canonical:continue
   entry=ET.SubElement(sitemap,'{'+ns+'}url');ET.SubElement(entry,'{'+ns+'}loc').text=doc.canonical
-  ET.SubElement(entry,'{'+ns+'}lastmod').text=UPDATED
+  source=p.read_text(encoding='utf-8')
+  graph=json.loads(re.search(r'<script type="application/ld\+json">(.*?)</script>',source,re.S)[1])['@graph']
+  modified=next(n.get('dateModified',UPDATED) for n in graph if n['@type'] in ['WebPage','CollectionPage'])
+  ET.SubElement(entry,'{'+ns+'}lastmod').text=modified
   for lang,url in doc.alts:ET.SubElement(entry,'{'+x+'}link',{'rel':'alternate','hreflang':lang,'href':url})
  ET.indent(sitemap,space='  ')
  ET.ElementTree(sitemap).write(root/'sitemap.xml',encoding='utf-8',xml_declaration=True)
