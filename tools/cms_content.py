@@ -11,6 +11,9 @@ if FILE.exists():
  checked=subprocess.run(['node','-e',"const s=require('./lib/admin-security.cjs');s.validateDocument(JSON.parse(require('fs').readFileSync('data/cms-published.json','utf8')),true)"],cwd=ROOT,capture_output=True,text=True)
  if checked.returncode:raise ValueError('CMS snapshot validation failed; publication stopped.')
  DOC=json.loads(FILE.read_text(encoding='utf-8'))
+source=DOC or SEED
+upgraded=subprocess.run(['node','-e',"let s='';process.stdin.on('data',x=>s+=x);process.stdin.on('end',()=>process.stdout.write(JSON.stringify(require('./lib/seo-defaults.cjs')(JSON.parse(s)))))"],input=json.dumps(source,ensure_ascii=False),cwd=ROOT,capture_output=True,text=True,encoding='utf-8',check=True)
+DOC=json.loads(upgraded.stdout)
 
 def configure(namespace):
  if DOC is None:return

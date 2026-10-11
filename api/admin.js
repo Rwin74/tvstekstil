@@ -4,6 +4,7 @@ const sharp=require('sharp');
 const S=require('../lib/admin-security.cjs');
 const DB=require('../lib/supabase.cjs');
 const seed=require('../data/cms-seed.json');
+const seoDefaults=require('../lib/seo-defaults.cjs');
 const env=process.env;
 function config(){const keys=DB.keys(env);S.ensure(/^https:\/\/[a-z0-9]+\.supabase\.co$/.test(env.SUPABASE_URL||'')&&keys.publicKey&&keys.secretKey,503,'Panel bağlantısı henüz tamamlanmadı.');S.seal({test:true},env);}
 async function remote(path,{token,method='GET',body,service=false,headers={}}={}){
@@ -46,7 +47,7 @@ module.exports=async function(req,res){
  S.ensure(session,401,'Giriş yapın.');await admin(session.token);
  if(req.method!=='GET')S.csrf(req,session);
  if(action==='logout'){S.ensure(req.method==='POST',405,'İstek yöntemi geçersiz.');setCookie(res,'',0);await remote('/auth/v1/logout',{token:session.token,method:'POST'}).catch(()=>{});return res.status(200).json({ok:true});}
- if(action==='content'){S.ensure(req.method==='GET',405,'İstek yöntemi geçersiz.');const rows=await remote('/rest/v1/cms_documents?id=eq.site&select=payload,version,published_at',{token:session.token});return res.status(200).json(rows[0]||{payload:seed,version:0,published_at:null});}
+ if(action==='content'){S.ensure(req.method==='GET',405,'İstek yöntemi geçersiz.');const rows=await remote('/rest/v1/cms_documents?id=eq.site&select=payload,version,published_at',{token:session.token});const record=rows[0]||{payload:seed,version:0,published_at:null};return res.status(200).json({...record,payload:seoDefaults(record.payload)});}
  if(action==='save'||action==='publish'){
  S.ensure(req.method==='POST',405,'İstek yöntemi geçersiz.');const data=S.jsonBody(req);S.ensure(Number.isInteger(data.version)&&data.version>=0,400,'İçerik sürümü geçersiz.');S.validateDocument(data.payload,action==='publish');if(action==='publish')S.ensure(env.ADMIN_GITHUB_PUBLISH_TOKEN,503,'Yayın bağlantısı henüz kurulmadı.');
  const result=await remote('/rest/v1/rpc/cms_save',{token:session.token,method:'POST',body:{content:data.payload,expected_version:data.version,make_public:action==='publish'}});

@@ -129,6 +129,7 @@ def page(lang,slug,title,description,body,noindex=False):
  product_updated=slug.startswith('collections/') and slug.split('/')[-1] in [it[0] for it in ITEMS]
  cms_product=cms_content.product(slug.split('/')[-1]) if product_updated else None
  page_updated=cms_product['updated'] if cms_product else SEO_UPDATED if product_updated else UPDATED
+ if slug=='index' and cms_content.DOC['pages'][lang]['home']['heading']!=cms_content.SEED['pages'][lang]['home']['heading']:page_updated='2026-10-11'
  for node in schema['@graph']:
   if node['@type']=='Organization':
    node['foundingDate']=FOUNDED
@@ -139,6 +140,7 @@ def page(lang,slug,title,description,body,noindex=False):
    node['author']={'@id':DOMAIN+'/#organization'}
  if not noindex:
   visible_date=page_updated if cms_product else SEO_DATES[lang] if product_updated else DATES[lang]
+  if slug=='index' and page_updated=='2026-10-11':visible_date=page_updated
   dateline=f'<div class="content-meta"><span>{esc(CORE[lang]["by"])}</span><time datetime="{page_updated}">{visible_date}</time></div>'
   body=body.replace('</section>','</section>'+dateline,1) if slug=='index' else body.replace('</nav>','</nav>'+dateline,1)
  nav=''.join(f'<a href="{base}{local(lang,s)}">{label}</a>' for s,label in zip(['products','about','sourcing-guide','contact'],t['nav']))

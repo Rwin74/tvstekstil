@@ -6,7 +6,8 @@ import os,re,urllib.request
 ROOT=Path(__file__).resolve().parents[1]
 snapshot=ROOT/'data/cms-published.json'
 if not snapshot.exists():raise SystemExit('No CMS snapshot to check.')
-doc=json.loads(snapshot.read_text(encoding='utf-8'))
+import cms_content
+doc=cms_content.DOC
 class Page(HTMLParser):
  def __init__(self):super().__init__();self.titles=0;self.h1=0;self.descriptions=0;self.title_active=False;self.title=''
  def handle_starttag(self,tag,attrs):

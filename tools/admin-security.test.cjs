@@ -3,6 +3,12 @@ const test=require('node:test'),assert=require('node:assert/strict'),crypto=requ
 const S=require('../lib/admin-security.cjs'),seed=require('../data/cms-seed.json');
 const env={ADMIN_SESSION_KEY:crypto.randomBytes(32).toString('base64')};
 const copy=()=>JSON.parse(JSON.stringify(seed));
+test('SEO defaults target all four languages and preserve editor overrides',()=>{
+ const upgrade=require('../lib/seo-defaults.cjs'),source=copy(),updated=upgrade(source);
+ S.validateDocument(updated,true);assert.deepEqual(source,seed);assert.deepEqual(upgrade(updated),updated);
+ for(const lang of S.LANGS){assert.notEqual(updated.pages[lang].home.heading,source.pages[lang].home.heading);for(const p of updated.products)assert(p.locales[lang].metaTitle.includes(p.locales[lang].name.toLowerCase())||p.locales[lang].metaTitle.toLowerCase().includes(p.locales[lang].name.toLowerCase()));}
+ source.products[0].locales.fr.metaTitle='Titre personnalisé du client';source.pages.en.home.heading='Our custom heading';const custom=upgrade(source);assert.equal(custom.products[0].locales.fr.metaTitle,'Titre personnalisé du client');assert.equal(custom.pages.en.home.heading,'Our custom heading');
+});
 test('missing multilingual pages and multibyte CSRF fail with controlled errors',()=>{for(const edit of [d=>delete d.pages.fr,d=>delete d.pages.en.home,d=>delete d.pages.es.contact.intro]){const d=copy();edit(d);assert.throws(()=>S.validateDocument(d,true),e=>e.status===400);}assert.throws(()=>S.csrf({headers:{origin:S.ORIGIN,'x-csrf-token':'éééé'}},{csrf:'abcd'}),e=>e.status===403);});
 test('modern keys stay out of the JWT Authorization header',()=>{const DB=require('../lib/supabase.cjs');assert.deepEqual(DB.headers('sb_publishable_test'),{apikey:'sb_publishable_test'});assert.deepEqual(DB.headers('sb_secret_test'),{apikey:'sb_secret_test'});assert.equal(DB.headers('sb_publishable_test','user-jwt').Authorization,'Bearer user-jwt');assert.equal(DB.headers('legacy-jwt').Authorization,'Bearer legacy-jwt');});
 test('valid four-language document and new products are accepted',()=>{S.validateDocument(copy(),true);const d=copy(),p=structuredClone(d.products[0]);p.slug='new-linen-product';d.products.push(p);S.validateDocument(d,true);});
