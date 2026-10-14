@@ -6,3 +6,8 @@ TVSTÜRKÇE
 supabase
 .github
 .env*
+tests
+test-results
+tmp
+.pytest_cache
+requirements-dev.txt

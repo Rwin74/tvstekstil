@@ -115,6 +115,10 @@
     {
       "source": "/cms-media/:name",
       "destination": "/api/media?name=:name"
+    },
+    {
+      "source": "/admin/butik-api/:path*",
+      "destination": "/api/boutiques?route=:path*"
     }
   ],
   "functions": {
@@ -124,6 +128,10 @@
     },
     "api/enquiries.js": {
       "maxDuration": 60
+    },
+    "api/boutiques.py": {
+      "maxDuration": 120,
+      "excludeFiles": "{node_modules/**,.git/**,.private/**,_site/**,img/**,tests/**,tools/**,supabase/**,data/**}"
     }
   }
 }
