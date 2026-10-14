@@ -7,3 +7,7 @@ node_modules/
 !.env.example
 .vercel/
 _site/
+tmp/
+.pytest_cache/
+test-results/
+*.db*
