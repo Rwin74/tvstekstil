@@ -36,7 +36,10 @@ def enrich(lang,slug,title,description,body,base,t,items,group_slugs,label_index
   description=c[{'sourcing-guide':'guide_desc'}.get(slug,slug+'_desc')]
  if slug=='index':description={'en':'We manufacture home, hotel, spa and baby textiles in our own Denizli factory. Founded in 2021, TVS Textile welcomes international buyer enquiries.','fr':'Nous fabriquons du linge de maison et des textiles hôtel, spa et bébé dans notre usine à Denizli. TVS Textile a été créée en 2021.','de':'Wir fertigen Heim-, Hotel-, Spa- und Babytextilien in unserer eigenen Fabrik in Denizli. TVS Textile wurde 2021 gegründet.','es':'Fabricamos textiles de hogar, hotel, spa y bebé en nuestra propia fábrica de Denizli. Fundamos TVS Textile en 2021.'}[lang]
  if slug in ['about','products','contact','sourcing-guide']:description=META[lang][{'sourcing-guide':'guide'}.get(slug,slug)]
- if group is not None:description=t['groups'][group]+': '+GROUPS[lang][group].split('. ')[0]+'.'
+ if group is not None:
+  titles={'en':['Home Textile Manufacturer in Turkey','Hotel & Spa Textile Manufacturer in Turkey','Baby Textile Manufacturer in Turkey'],'fr':['Fabricant de linge de maison en Turquie','Fabricant de textiles hôtel et spa en Turquie','Fabricant de textiles bébé en Turquie'],'de':['Heimtextilien Hersteller Türkei','Hoteltextilien und Spa-Textilien Hersteller Türkei','Babytextilien Hersteller Türkei'],'es':['Fabricante de textiles de hogar en Turquía','Fabricante de textiles de hotel y spa en Turquía','Fabricante de textiles para bebé en Turquía']}
+  title=titles[lang][group]+' | TVS Textile'
+  description=t['groups'][group]+': '+GROUPS[lang][group].split('. ')[0]+'.'
  if item:
   description=item[idx]+': '+PRODUCTS[lang][items.index(item)][0]
  def link(s,label):return f'<a href="{base}{local(lang,s)}">{escape(label)}</a>'

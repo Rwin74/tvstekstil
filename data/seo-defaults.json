@@ -221,25 +221,29 @@
     "en": {
       "home": {
         "title": "Textile Manufacturer in Turkey | Bedding, Towels & Baby Textiles",
-        "heading": "Textile manufacturing.\nFrom our Denizli factory."
+        "heading": "Textile manufacturing.\nFrom our Denizli factory.",
+        "intro": "We manufacture bedding, towels, bathrobes and baby textiles in our own Denizli factory. Choose a collection to explore the products, then send us the sizes, materials and quantities for your wholesale enquiry."
       }
     },
     "fr": {
       "home": {
         "title": "Fabricant textile en Turquie | Linge de lit, bain et bébé",
-        "heading": "Fabricant de linge de maison.\nNotre usine à Denizli."
+        "heading": "Fabricant de linge de maison.\nNotre usine à Denizli.",
+        "intro": "Dans notre usine à Denizli, nous fabriquons du linge de lit, des serviettes, des peignoirs et des textiles bébé. Parcourez les collections, puis transmettez-nous les dimensions, matières et quantités de votre projet professionnel."
       }
     },
     "de": {
       "home": {
         "title": "Textilhersteller Türkei | Bettwäsche, Handtücher & Babytextilien",
-        "heading": "Textilhersteller in der Türkei.\nUnsere Fabrik in Denizli."
+        "heading": "Textilhersteller in der Türkei.\nUnsere Fabrik in Denizli.",
+        "intro": "In unserer eigenen Fabrik in Denizli fertigen wir Bettwäsche, Handtücher, Bademäntel und Babytextilien. Wählen Sie Ihre Kollektion und teilen Sie uns Maße, Materialien und Mengen für Ihre Großhandelsanfrage mit."
       }
     },
     "es": {
       "home": {
         "title": "Fabricante textil en Turquía | Ropa de cama, baño y bebé",
-        "heading": "Fabricamos textiles en Turquía.\nDesde nuestra fábrica en Denizli."
+        "heading": "Fabricamos textiles en Turquía.\nDesde nuestra fábrica en Denizli.",
+        "intro": "En nuestra fábrica de Denizli producimos ropa de cama, toallas, albornoces y textiles para bebé. Explore cada colección y envíenos medidas, materiales y cantidades para su consulta de compra al por mayor."
       }
     }
   }

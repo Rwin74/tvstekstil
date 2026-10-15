@@ -22,7 +22,12 @@ names={
 'baby-sleeping-bags':['Baby sleeping bags','Gigoteuses bébé','Baby-Schlafsäcke','Sacos de dormir para bebé'],
 'baby-comforters':['Baby comforters','Doudous bébé','Baby-Schmusetücher','Doudous para bebé']}
 result={'products':{},'pages':{}}
-for lang,(title,heading) in home.items():result['pages'][lang]={'home':{'title':title,'heading':heading}}
+intros={
+'en':'We manufacture bedding, towels, bathrobes and baby textiles in our own Denizli factory. Choose a collection to explore the products, then send us the sizes, materials and quantities for your wholesale enquiry.',
+'fr':'Dans notre usine à Denizli, nous fabriquons du linge de lit, des serviettes, des peignoirs et des textiles bébé. Parcourez les collections, puis transmettez-nous les dimensions, matières et quantités de votre projet professionnel.',
+'de':'In unserer eigenen Fabrik in Denizli fertigen wir Bettwäsche, Handtücher, Bademäntel und Babytextilien. Wählen Sie Ihre Kollektion und teilen Sie uns Maße, Materialien und Mengen für Ihre Großhandelsanfrage mit.',
+'es':'En nuestra fábrica de Denizli producimos ropa de cama, toallas, albornoces y textiles para bebé. Explore cada colección y envíenos medidas, materiales y cantidades para su consulta de compra al por mayor.'}
+for lang,(title,heading) in home.items():result['pages'][lang]={'home':{'title':title,'heading':heading,'intro':intros[lang]}}
 for p in seed['products']:
  result['products'][p['slug']]={}
  for i,lang in enumerate(home):
