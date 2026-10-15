@@ -12,7 +12,11 @@ for attempt in range(6):
   with urllib.request.urlopen(request,timeout=20) as response:raw=response.read(1100001)
   break
  except urllib.error.URLError as error:
-  if isinstance(error,urllib.error.HTTPError) and error.code!=429 and not 500<=error.code<600:raise
+  if isinstance(error,urllib.error.HTTPError) and error.code!=429 and not 500<=error.code<600:
+   try:
+    detail=json.loads(error.read(2000));print('CMS response:',str(detail.get('code',''))[:80],str(detail.get('message',''))[:240],flush=True)
+   except (ValueError,AttributeError):pass
+   raise
   if attempt==5:raise
   print('CMS temporarily unavailable; retrying public snapshot download.',flush=True)
   time.sleep(min(20,5*(attempt+1)))
