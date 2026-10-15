@@ -1,5 +1,5 @@
 """Fetch only the public CMS projection. No private records enter Git."""
-import os,json,re,urllib.request,subprocess
+import os,json,re,urllib.request,urllib.error,subprocess,time
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
 url=os.environ.get('CMS_SUPABASE_URL','');key=os.environ.get('CMS_SUPABASE_ANON_KEY','')
@@ -7,7 +7,15 @@ if not re.fullmatch(r'https://[a-z0-9]+\.supabase\.co',url) or not key:raise Sys
 headers={'apikey':key,'Content-Type':'application/json'}
 if not key.startswith('sb_'):headers['Authorization']='Bearer '+key
 request=urllib.request.Request(url+'/rest/v1/rpc/cms_published',data=b'{}',method='POST',headers=headers)
-with urllib.request.urlopen(request,timeout=20) as response:raw=response.read(1100001)
+for attempt in range(4):
+ try:
+  with urllib.request.urlopen(request,timeout=20) as response:raw=response.read(1100001)
+  break
+ except urllib.error.URLError as error:
+  if isinstance(error,urllib.error.HTTPError) and error.code not in [429,500,502,503,504]:raise
+  if attempt==3:raise
+  print('CMS temporarily unavailable; retrying public snapshot download.',flush=True)
+  time.sleep(5*(attempt+1))
 if len(raw)>1100000:raise SystemExit('CMS snapshot too large.')
 data=json.loads(raw)
 if not isinstance(data,dict):raise SystemExit('No published snapshot exists.')
