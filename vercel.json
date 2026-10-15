@@ -2,6 +2,7 @@
   "framework": null,
   "buildCommand": "node tools/build_vercel.cjs",
   "outputDirectory": "_site",
+  "crons": [{"path":"/api/cms-health","schedule":"0 7 * * *"}],
   "headers": [
     {
       "source": "/(.*)",
