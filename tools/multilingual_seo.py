@@ -61,15 +61,18 @@ def enrich(lang,slug,title,description,body,base,t,items,group_slugs,label_index
   g=group if group is not None else item[1]
   anchors=[link('collections/'+it[0],it[idx]) for it in items if it[1]==g and (not item or it[0]!=item[0])]
   section=f'<section class="section seo-context"><span class="eyebrow">{t["buyer"]}</span><h2>{t["groups"][g]}</h2><div class="seo-links">'+''.join(anchors)+'</div><p class="sourcing-path">'+link('sourcing-guide',c['read'])+' · '+link('contact',c['request'])+'</p></section>'
-  if lang=='de' and g==0:
-   section=section.replace('</section>', '<p class="sourcing-path">'+link('bettwaesche-tuerkei','Bettwäsche aus der Türkei: Sortimentsübersicht für Einkäufer')+'</p></section>')
+  if lang=='de':
+   landing={0:('bettwaesche-tuerkei','Bettwäsche aus der Türkei: Sortimentsübersicht für Einkäufer'),1:('hoteltextilien-tuerkei','Hoteltextilien aus der Türkei: Einkaufsbrief für Hotel und Spa'),2:('babytextilien-tuerkei','Babytextilien aus der Türkei: Produktbrief für Marken')}.get(g)
+   if landing:section=section.replace('</section>', '<p class="sourcing-path">'+link(*landing)+'</p></section>')
  elif slug in ['index','sourcing-guide','about']:
   section=f'<section class="section seo-hub"><h2>{c["hub"]}</h2><div class="seo-hub-grid">'
   for g,group_slug in enumerate(group_slugs):
    section+='<article><h3>'+link('collections/'+group_slug,t['groups'][g])+'</h3><ul>'+''.join('<li>'+link('collections/'+it[0],it[idx])+'</li>' for it in items if it[1]==g)+'</ul></article>'
   section+='</div>'
   if slug!='sourcing-guide':section+='<p class="sourcing-path">'+link('sourcing-guide',c['read'])+'</p>'
-  if lang=='de' and slug=='index':section+='<p class="sourcing-path">'+link('bettwaesche-tuerkei','Bettwäsche aus der Türkei: Sortiment für internationale Einkäufer')+'</p>'
+  if lang=='de' and slug=='index':
+   section+='<p class="sourcing-path">'+link('bettwaesche-tuerkei','Bettwäsche aus der Türkei: Sortiment für internationale Einkäufer')+'</p>'
+   section+='<p class="sourcing-path">'+link('hoteltextilien-tuerkei','Hoteltextilien aus der Türkei: Einkauf für Hotel und Spa')+' · '+link('babytextilien-tuerkei','Babytextilien aus der Türkei für Marken')+'</p>'
   section+='</section>'
  if section:
   marker='<section class="project-section">'
