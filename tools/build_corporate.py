@@ -113,7 +113,7 @@ def page(lang,slug,title,description,body,noindex=False):
  t=L[lang]; file=local(lang,slug); depth=len(Path(file).parts)-1; base='/' if slug=='404' else '../'*depth
  body=apply_voice(lang,slug,body,ITEMS,LABEL_INDEX)
  canonical=DOMAIN+'/'+route(lang,slug)
- multilingual = not noindex and slug not in ['privacy','blog']
+ multilingual = not noindex and slug not in ['privacy','blog','bettwaesche-tuerkei']
  alternates=''.join(f'<link rel="alternate" hreflang="{code}" href="{DOMAIN}/{route(code,slug)}">' for code in L) if multilingual else ''
  if alternates: alternates+=f'<link rel="alternate" hreflang="x-default" href="{DOMAIN}/{route("en",slug)}">'
  schema={'@context':'https://schema.org','@graph':[{'@type':'Organization','@id':DOMAIN+'/#organization','name':'TVS Textile','url':DOMAIN,'logo':DOMAIN+'/img/tvslogo_yeni.webp','email':'ozkan@tvstextile.com','telephone':'+905324770375','address':{'@type':'PostalAddress','streetAddress':'Akçeşme M. 2605 Sk. No: 40','addressLocality':'Merkezefendi','addressRegion':'Denizli','addressCountry':'TR'}},{'@type':'WebPage','@id':canonical+'#webpage','url':canonical,'name':title,'description':description,'inLanguage':lang,'publisher':{'@id':DOMAIN+'/#organization'}}]}
@@ -130,6 +130,7 @@ def page(lang,slug,title,description,body,noindex=False):
  cms_product=cms_content.product(slug.split('/')[-1]) if product_updated else None
  page_updated=cms_product['updated'] if cms_product else SEO_UPDATED if product_updated else UPDATED
  if slug=='index' or slug in ['collections/'+group for group in GROUP_SLUGS]:page_updated='2026-10-15'
+ if slug=='bettwaesche-tuerkei':page_updated='2026-10-28'
  for node in schema['@graph']:
   if node['@type']=='Organization':
    node['foundingDate']=FOUNDED
@@ -140,6 +141,7 @@ def page(lang,slug,title,description,body,noindex=False):
    node['author']={'@id':DOMAIN+'/#organization'}
  if not noindex:
   visible_date=page_updated if cms_product else SEO_DATES[lang] if product_updated else DATES[lang]
+  if slug=='bettwaesche-tuerkei':visible_date=page_updated
   if page_updated=='2026-10-15':visible_date=page_updated
   dateline=f'<div class="content-meta"><span>{esc(CORE[lang]["by"])}</span><time datetime="{page_updated}">{visible_date}</time></div>'
   body=body.replace('</section>','</section>'+dateline,1) if slug=='index' else body.replace('</nav>','</nav>'+dateline,1)
@@ -184,6 +186,16 @@ def build():
   page(lang,'about',t['about']+' | TVS Textile, Denizli',sp,f'<section class="page-intro"><span class="eyebrow">DENİZLİ, TÜRKİYE / TVS TEXTILE</span><h1>{st}</h1><p>{sp}</p></section><section class="section">{groups(lang,base)}</section><section class="section product-detail"><div><h2>{t["spec"]}</h2><p>{t["brief"]}</p></div><aside><h3>{t["contact"]}</h3><p>{ADDRESS}</p><a href="tel:+905324770375">+90 532 477 0375</a><p><a href="mailto:ozkan@tvstextile.com">ozkan@tvstextile.com</a></p></aside></section>'+cta(lang,base))
   build_contact(lang,base)
   build_guide(lang,base)
+ # One substantial German landing page consolidates closely related Search
+ # Console variants instead of creating several thin keyword pages.
+ de_bedding = '''<section class="page-intro"><span class="eyebrow">TVS TEXTILE / DENİZLİ, TÜRKEI</span><h1>Bettwäsche aus der Türkei für Ihre Kollektion</h1><p>Wir fertigen Heimtextilien in unserer eigenen Fabrik in Denizli. Seit unserer Gründung im Jahr 2021 entwickeln wir Bettwäsche für internationale Einkäufer – abgestimmt auf Produktidee, Maße, Materialwunsch und Zielmarkt.</p><a class="button" href="contact.html?product=duvet-covers">Bettwäsche-Projekt besprechen ↗</a></section>
+ <section class="section"><div class="section-heading"><div><span class="eyebrow">01 / BETTWÄSCHE TÜRKEI</span><h2>Drei Produktbereiche für ein stimmiges Sortiment</h2></div><p>Welche türkische Bettwäsche zu Ihrem Sortiment passt, hängt vom gewünschten Griff, den Maßen und dem Einsatzzweck ab. Wir klären diese Angaben mit Ihnen, bevor eine Produktspezifikation festgelegt wird.</p></div><div class="guide-list">
+ <article class="guide-row"><span>01</span><div><h2>Musselin-Bettwäsche</h2><p>Für Musselin-Bettwäsche besprechen wir die gewünschte Zusammensetzung, Lagen, Fertigmaße und Pflegehinweise. So lässt sich die Produktidee sauber in ein Briefing für Ihre Kollektion übersetzen.</p><a class="text-link" href="collections/muslin-duvet-covers.html">Musselin-Bettwäsche ansehen ↗</a></div></article>
+ <article class="guide-row"><span>02</span><div><h2>Spannbettlaken</h2><p>Entscheidend sind Breite, Länge und Höhe der Matratze sowie die gewünschte Material- und Passform. Teilen Sie uns die Maße mit, damit Gummizug und Verarbeitung passend besprochen werden können.</p><a class="text-link" href="collections/fitted-sheets.html">Spannbettlaken ansehen ↗</a></div></article>
+ <article class="guide-row"><span>03</span><div><h2>Bettbezüge</h2><p>Für Bettbezüge geben Sie bitte Fertigmaße, Materialwunsch, Verschlussart und Bedarf an Kissenbezügen an. Farb- und Designreferenzen helfen, die Abstimmung für ein zusammenhängendes Sortiment zu erleichtern.</p><a class="text-link" href="collections/duvet-covers.html">Bettbezüge ansehen ↗</a></div></article>
+ </div></section>
+ <section class="section product-detail"><div><span class="eyebrow">02 / ZUSAMMENARBEIT</span><h2>Von Denizli zu Ihrem Zielmarkt</h2><p>TVS Textile wurde 2021 gegründet und produziert an der eigenen Adresse in Denizli. Wir richten die Anfrage auf Ihre konkreten Produktanforderungen aus. Mengen, Muster, Lieferzeit, Konformität und Handelsbedingungen werden projektbezogen geprüft und vor einer Bestellung ausdrücklich vereinbart.</p><p>Für die erste Abstimmung helfen Produktart, gewünschte Maße, Materialreferenz, Mengen je Variante und Zielland. So kann unser Team gezielt auf Ihr Bettwäsche-Projekt eingehen.</p><a class="text-link" href="sourcing-guide.html">Einkaufsleitfaden für Textilien lesen ↗</a></div><aside><h3>Ihre Anfrage vorbereiten</h3><p>Nennen Sie die Produktart, Maße, Materialwünsche, Varianten, geplante Mengen und das Zielland.</p><a class="button" href="contact.html?product=duvet-covers">Anfrage zu Bettwäsche senden ↗</a></aside></section>'''+cta('de','../')
+ page('de','bettwaesche-tuerkei','Bettwäsche aus der Türkei für Marken & Einkäufer | TVS Textile','Türkische Bettwäsche aus Denizli: Musselin-Bettwäsche, Spannbettlaken und Bettbezüge. Besprechen Sie Maße, Materialien und Mengen direkt mit TVS Textile.',de_bedding)
  build_legacy()
  paths=[p for p in ROOT.glob('*.html') if p.stem not in ['404','post','product-detail']]+list((ROOT/'collections').glob('*.html'))
  for lang in ['fr','de','es']: paths+=list((ROOT/lang).rglob('*.html'))
