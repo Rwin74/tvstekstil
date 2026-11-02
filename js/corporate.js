@@ -11,6 +11,15 @@ if ('IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: re
  document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
 }
 const form=document.querySelector('#enquiry-form');
+document.querySelectorAll('[data-map-load]').forEach(button=>button.addEventListener('click',()=>{
+ const frame=document.createElement('iframe');
+ frame.title=button.dataset.mapTitle||'TVS Textile location map';
+ frame.src=button.dataset.mapSrc;
+ frame.loading='lazy';
+ frame.referrerPolicy='strict-origin-when-cross-origin';
+ frame.setAttribute('allowfullscreen','');
+ button.replaceWith(frame);
+}));
 if(form){
  const requested=new URLSearchParams(location.search).get('product');
  if(requested && [...form.elements.product.options].some(o=>o.value===requested))form.elements.product.value=requested;
